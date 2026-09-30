@@ -1,0 +1,2020 @@
+{
+  "schema_version": "0.8",
+  "spec_id": "draft-507293bee4e5",
+  "metadata": {
+    "project_id": null,
+    "product_system": "大豆分离蛋白（SPI）价值链（Soy_protein_isolation）",
+    "product_name": {
+      "zh": "Soy Protein Isolate (SPI)",
+      "en": null
+    },
+    "functional_unit": "1 kg SPI（湿基，95% 干物质）",
+    "system_boundary": "cradle-to-gate 前景系统：破碎与脱皮→脱脂（调质/压片/溶剂萃取）→SPI 提取（碱提/离心/等电点沉淀/洗涤/干燥）；种植与干燥阶段为背景（Agrifootprint v6.3），运输为背景接口；资本品 excluded；SPI 路径不含 milling（value_chains.xlsx 已确认）",
+    "modeling_mode": "consequential",
+    "database_type": null,
+    "allocation_policy": null,
+    "substitution_status": null,
+    "value_scenario": "representative",
+    "inventory_version": "v4.3-frozen-2026-09-27（补记绘图确认：27流显示决定＋13拓扑；科学数值未变）",
+    "source_workbook": "SPI_CLCA前景清单_v4.3_frozen.xlsx",
+    "source_content_sha256": "507293bee4e514b102a5c3752ce7cf5e6e4cf3b35b58ba14f647a73cb3efacb8",
+    "intended_use": [],
+    "language": "zh-CN"
+  },
+  "confirmations": {
+    "data": {
+      "status": "confirmed",
+      "note": "用户2026-09-26确认闸门B；冻结范围=模块骨架＋已采用流卡＋方法口径"
+    },
+    "figure": {
+      "status": "confirmed",
+      "date": "2026-09-27",
+      "note": "v15 机器回归：编译器v2+渲染器全机器出图，与案例07比对验收"
+    }
+  },
+  "containers": [],
+  "nodes": [
+    {
+      "node_id": "PS-SPI",
+      "process_id": "PS-SPI",
+      "workshop_id": "-",
+      "name": "大豆分离蛋白价值链",
+      "sequence": "1",
+      "granularity": "产品系统",
+      "internal_operations": "SPI 生产全链；含背景接口（cultivation、运输）",
+      "branch_role": "主线",
+      "source_refs": "Siegrist 2026 §2.2 Table 1（SPI 列：cultivation, dehulling, defatting, isoelectric precipitation）+ value_chains.xlsx（SPI 无 milling）",
+      "include": false,
+      "expand_mode": "顶层总览",
+      "display_label": "大豆分离蛋白价值链",
+      "en_name": "Soy protein isolation value chain",
+      "provenance": "模型过程:PS-SPI"
+    },
+    {
+      "node_id": "M1",
+      "process_id": "M1",
+      "workshop_id": "预处理",
+      "name": "清理、破碎与脱壳",
+      "sequence": "1",
+      "granularity": "计算过程",
+      "internal_operations": "破碎+脱皮组合操作；不新增独立 cleaning loss/电耗（Q-A01 已裁决）",
+      "branch_role": "主线",
+      "source_refs": "同骨架依据",
+      "include": true,
+      "expand_mode": "模块框",
+      "display_label": "清理、破碎与脱壳",
+      "en_name": "Cracking and dehulling",
+      "provenance": "模型过程:M1"
+    },
+    {
+      "node_id": "M2",
+      "process_id": "M2",
+      "workshop_id": "预处理",
+      "name": "大豆脱脂",
+      "sequence": "2",
+      "granularity": "计算过程",
+      "internal_operations": "调质→压片→溶剂萃取；己烷循环内部化，fresh hexane 为净补充；不并入 degumming",
+      "branch_role": "主线",
+      "source_refs": "同骨架依据；M2 质量差额 0.03 kg/kg 不硬补（Q09）",
+      "include": true,
+      "expand_mode": "模块框（内部工序在覆盖矩阵登记）",
+      "display_label": "大豆脱脂",
+      "en_name": "Conditioning, flaking and defatting",
+      "provenance": "模型过程:M2"
+    },
+    {
+      "node_id": "M3",
+      "process_id": "M3",
+      "workshop_id": "蛋白分离",
+      "name": "SPI 蛋白提取",
+      "sequence": "3",
+      "granularity": "计算过程",
+      "internal_operations": "碱提→一离(豆渣支线:压榨→闪蒸)→等电点沉淀→二离(乳清)→洗涤/三离→喷雾干燥",
+      "branch_role": "主线",
+      "source_refs": "同骨架依据",
+      "include": true,
+      "expand_mode": "模块框+一条主线+豆渣支线+水相节点",
+      "display_label": "SPI 蛋白提取",
+      "en_name": "Soy protein isolation (isoelectric precipitation)",
+      "provenance": "模型过程:M3"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_F01",
+      "flow_id": "F01",
+      "name": "大豆原料/干燥大豆",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M1",
+      "source_value": 2.722899,
+      "representative_value": 2.722899,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-上游物理输入",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "原始大豆 2.7229 kg",
+      "provenance": "模型流与公式:F01"
+    },
+    {
+      "edge_id": "edge_F02",
+      "flow_id": "F02",
+      "name": "脱皮大豆",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M1",
+      "target_node_id": "M2",
+      "source_value": 2.521203,
+      "representative_value": 2.521203,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-内部主物流",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "main_horizontal",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "去壳大豆 2.5212 kg",
+      "provenance": "模型流与公式:F02"
+    },
+    {
+      "edge_id": "edge_F03",
+      "flow_id": "F03",
+      "name": "豆皮 hulls",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M1",
+      "target_node_id": "EXT_OUT",
+      "source_value": 0.201696,
+      "representative_value": 0.201696,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "共产品显式保留-替代接口未定义",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "豆壳 0.2017 kg",
+      "provenance": "模型流与公式:F03"
+    },
+    {
+      "edge_id": "edge_F04",
+      "flow_id": "F04",
+      "name": "电力",
+      "category": "能源",
+      "value_type": "physical_energy",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M1",
+      "source_value": 0.016387818,
+      "representative_value": 0.016387818,
+      "display_value": null,
+      "unit": "kWh",
+      "basis": "kWh/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块总量",
+      "branch_role": "主线",
+      "visual_role": "physical_energy",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "电力 0.01639 kWh",
+      "provenance": "模型流与公式:F04"
+    },
+    {
+      "edge_id": "edge_F05",
+      "flow_id": "F05",
+      "name": "工艺水",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M2",
+      "source_value": 0.62507,
+      "representative_value": 0.62507,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块代表值",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "工艺水 0.6251 kg",
+      "provenance": "模型流与公式:F05"
+    },
+    {
+      "edge_id": "edge_F06",
+      "flow_id": "F06",
+      "name": "fresh hexane",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M2",
+      "source_value": 0.002728,
+      "representative_value": 0.002728,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-净补充量",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "新鲜正己烷 0.002728 kg",
+      "provenance": "模型流与公式:F06"
+    },
+    {
+      "edge_id": "edge_F07",
+      "flow_id": "F07",
+      "name": "电力",
+      "category": "能源",
+      "value_type": "physical_energy",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M2",
+      "source_value": 0.078847119,
+      "representative_value": 0.078847119,
+      "display_value": null,
+      "unit": "kWh",
+      "basis": "kWh/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块总量",
+      "branch_role": "主线",
+      "visual_role": "physical_energy",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "电力 0.07885 kWh",
+      "provenance": "模型流与公式:F07"
+    },
+    {
+      "edge_id": "edge_F08",
+      "flow_id": "F08",
+      "name": "热量",
+      "category": "能源",
+      "value_type": "physical_energy",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M2",
+      "source_value": 1.889746603,
+      "representative_value": 1.889746603,
+      "display_value": null,
+      "unit": "MJ",
+      "basis": "MJ/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块总量",
+      "branch_role": "主线",
+      "visual_role": "physical_energy",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "热 1.88975 MJ",
+      "provenance": "模型流与公式:F08"
+    },
+    {
+      "edge_id": "edge_F09",
+      "flow_id": "F09",
+      "name": "white flakes",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M2",
+      "target_node_id": "M3",
+      "source_value": 1.985199,
+      "representative_value": 1.985199,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-内部主物流",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "main_horizontal",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "白豆片 1.9852 kg 干物质 88%",
+      "provenance": "模型流与公式:F09"
+    },
+    {
+      "edge_id": "edge_F10",
+      "flow_id": "F10",
+      "name": "豆油",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M2",
+      "target_node_id": "EXT_OUT",
+      "source_value": 0.476448,
+      "representative_value": 0.476448,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "共产品显式保留-替代接口未定义",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "豆油 0.4764 kg",
+      "provenance": "模型流与公式:F10"
+    },
+    {
+      "edge_id": "edge_F11",
+      "flow_id": "F11",
+      "name": "废水",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M2",
+      "target_node_id": "EXT_OUT",
+      "source_value": 0.62507,
+      "representative_value": 0.62507,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块代表值",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "工艺废水 0.6251 kg",
+      "provenance": "模型流与公式:F11"
+    },
+    {
+      "edge_id": "edge_F12",
+      "flow_id": "F12",
+      "name": "己烷排放",
+      "category": "环境排放",
+      "value_type": "environment_exchange",
+      "source_node_id": "M2",
+      "target_node_id": "EXT_OUT",
+      "source_value": 0.002728,
+      "representative_value": 0.002728,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+（源公式 wastewater 用 -1 为软件约定）",
+      "method_use_status": "CLCA不分配-排放",
+      "branch_role": "主线",
+      "visual_role": "environment_exchange",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "正己烷排放 0.002728 kg",
+      "provenance": "模型流与公式:F12"
+    },
+    {
+      "edge_id": "edge_F13",
+      "flow_id": "F13",
+      "name": "浸提步骤加水",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 19.85199,
+      "representative_value": 19.85199,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "步骤加水-非最终 external exchange",
+      "branch_role": "主线",
+      "visual_role": null,
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": false,
+      "display_label": "（工艺投水，不进 LCI 图面）",
+      "provenance": "模型流与公式:F13"
+    },
+    {
+      "edge_id": "edge_F14",
+      "flow_id": "F14",
+      "name": "蛋白洗涤步骤加水",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 6,
+      "representative_value": 6,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "步骤加水-非最终 external exchange",
+      "branch_role": "主线",
+      "visual_role": null,
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": false,
+      "display_label": "（工艺投水，不进 LCI 图面）",
+      "provenance": "模型流与公式:F14"
+    },
+    {
+      "edge_id": "edge_F15",
+      "flow_id": "F15",
+      "name": "NaOH 10% 溶液",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 0.124075,
+      "representative_value": 0.124075,
+      "display_value": null,
+      "unit": "L",
+      "basis": "L/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "化学品-最终 kg 映射待核",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "NaOH 10% 溶液 0.1241 L*",
+      "provenance": "模型流与公式:F15"
+    },
+    {
+      "edge_id": "edge_F16",
+      "flow_id": "F16",
+      "name": "HCl 10% 溶液",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 0.173705,
+      "representative_value": 0.173705,
+      "display_value": null,
+      "unit": "L",
+      "basis": "L/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "化学品-最终 kg 映射待核",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "HCl 10% 溶液 0.1737 L*",
+      "provenance": "模型流与公式:F16"
+    },
+    {
+      "edge_id": "edge_F17",
+      "flow_id": "F17",
+      "name": "电力",
+      "category": "能源",
+      "value_type": "physical_energy",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 0.062999518,
+      "representative_value": 0.062999518,
+      "display_value": null,
+      "unit": "kWh",
+      "basis": "kWh/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块总量",
+      "branch_role": "主线",
+      "visual_role": "physical_energy",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "电力 0.06300 kWh",
+      "provenance": "模型流与公式:F17"
+    },
+    {
+      "edge_id": "edge_F18",
+      "flow_id": "F18",
+      "name": "热量",
+      "category": "能源",
+      "value_type": "physical_energy",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 27.50083262,
+      "representative_value": 27.50083262,
+      "display_value": null,
+      "unit": "MJ",
+      "basis": "MJ/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "CLCA不分配-模块总量",
+      "branch_role": "主线",
+      "visual_role": "physical_energy",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "热 27.5008 MJ",
+      "provenance": "模型流与公式:F18"
+    },
+    {
+      "edge_id": "edge_F19",
+      "flow_id": "F19",
+      "name": "SPI 主产品",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M3",
+      "target_node_id": "EXT_OUT",
+      "source_value": 1,
+      "representative_value": 1,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "主产品",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "大豆分离蛋白（SPI）1.0000 kg 干物质 95%",
+      "provenance": "模型流与公式:F19"
+    },
+    {
+      "edge_id": "edge_F20",
+      "flow_id": "F20",
+      "name": "spent flakes",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M3",
+      "target_node_id": "EXT_OUT",
+      "source_value": 0.54494,
+      "representative_value": 0.54494,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "共产品显式保留-替代接口未定义",
+      "branch_role": "支线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "提取后豆片 0.5449 kg（含水约 10%）",
+      "provenance": "模型流与公式:F20"
+    },
+    {
+      "edge_id": "edge_F21",
+      "flow_id": "F21",
+      "name": "whey-rich 水相",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M3",
+      "target_node_id": "EXT_OUT",
+      "source_value": 11.490193,
+      "representative_value": 11.490193,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "审计中-不称严格总废水",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "乳清水相 11.4902 kg*",
+      "provenance": "模型流与公式:F21"
+    },
+    {
+      "edge_id": "edge_F22",
+      "flow_id": "F22",
+      "name": "喷雾干燥水蒸气",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M3",
+      "target_node_id": "EXT_OUT",
+      "source_value": 4.9375,
+      "representative_value": 4.9375,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "物理输出-是否 elementary exchange 另定",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "蒸发水 4.9375 kg",
+      "provenance": "模型流与公式:F22"
+    },
+    {
+      "edge_id": "edge_F23",
+      "flow_id": "F23",
+      "name": "闪蒸干燥水蒸气",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "M3",
+      "target_node_id": "EXT_OUT",
+      "source_value": 0.209592,
+      "representative_value": 0.209592,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "物理输出-是否 elementary exchange 另定",
+      "branch_role": "支线",
+      "visual_role": "physical_material",
+      "route_class": "output_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "水蒸气 0.2096 kg",
+      "provenance": "模型流与公式:F23"
+    },
+    {
+      "edge_id": "edge_F24",
+      "flow_id": "F24",
+      "name": "外部新鲜水 tap_water（Formulas_SPI）",
+      "category": "物理流",
+      "value_type": "physical_material",
+      "source_node_id": "EXT_IN",
+      "target_node_id": "M3",
+      "source_value": 16.980004,
+      "representative_value": 16.980004,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI",
+      "sign_convention": "+",
+      "method_use_status": "审计中-暂不锁定最终 exchange",
+      "branch_role": "主线",
+      "visual_role": "physical_material",
+      "route_class": "input_vertical",
+      "visual_group_id": null,
+      "include": true,
+      "display_label": "外部取水 16.98 kg",
+      "provenance": "模型流与公式:F24"
+    },
+    {
+      "edge_id": "edge_F25",
+      "flow_id": "F25",
+      "name": "豆皮-替代接口",
+      "category": "方法接口",
+      "value_type": "substitution_candidate",
+      "source_node_id": null,
+      "target_node_id": null,
+      "source_value": null,
+      "representative_value": null,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI（占位）",
+      "sign_convention": "+",
+      "method_use_status": "substitution_candidate-接口未定义",
+      "branch_role": "主线",
+      "visual_role": null,
+      "route_class": null,
+      "visual_group_id": null,
+      "include": false,
+      "display_label": "豆皮-替代接口",
+      "provenance": "模型流与公式:F25"
+    },
+    {
+      "edge_id": "edge_F26",
+      "flow_id": "F26",
+      "name": "豆油-替代接口",
+      "category": "方法接口",
+      "value_type": "substitution_candidate",
+      "source_node_id": null,
+      "target_node_id": null,
+      "source_value": null,
+      "representative_value": null,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI（占位）",
+      "sign_convention": "+",
+      "method_use_status": "substitution_candidate-接口未定义",
+      "branch_role": "主线",
+      "visual_role": null,
+      "route_class": null,
+      "visual_group_id": null,
+      "include": false,
+      "display_label": "豆油-替代接口",
+      "provenance": "模型流与公式:F26"
+    },
+    {
+      "edge_id": "edge_F27",
+      "flow_id": "F27",
+      "name": "spent flakes-替代接口",
+      "category": "方法接口",
+      "value_type": "substitution_candidate",
+      "source_node_id": null,
+      "target_node_id": null,
+      "source_value": null,
+      "representative_value": null,
+      "display_value": null,
+      "unit": "kg",
+      "basis": "kg/kg SPI（占位）",
+      "sign_convention": "+",
+      "method_use_status": "substitution_candidate-接口未定义",
+      "branch_role": "主线",
+      "visual_role": null,
+      "route_class": null,
+      "visual_group_id": null,
+      "include": false,
+      "display_label": "spent flakes-替代接口",
+      "provenance": "模型流与公式:F27"
+    }
+  ],
+  "display_edges": [
+    {
+      "flow_id": "F01",
+      "edge_id": "edge_F01",
+      "source_node_id": "ext_F01",
+      "target_node_id": "op_M1-OP1",
+      "label_node_id": "ext_F01",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F02",
+      "edge_id": "edge_F02",
+      "source_node_id": "op_M1-OP1",
+      "target_node_id": "op_M2-OP1",
+      "label_node_id": "lab_F02",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F03",
+      "edge_id": "edge_F03",
+      "source_node_id": "op_M1-OP1",
+      "target_node_id": "out_F03",
+      "label_node_id": "out_F03",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F06",
+      "edge_id": "edge_F06",
+      "source_node_id": "ext_F06",
+      "target_node_id": "op_M2-OP3",
+      "label_node_id": "ext_F06",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F09",
+      "edge_id": "edge_F09",
+      "source_node_id": "op_M2-OP4",
+      "target_node_id": "op_M3-OP1",
+      "label_node_id": "lab_F09",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F10",
+      "edge_id": "edge_F10",
+      "source_node_id": "op_M2-OP3",
+      "target_node_id": "out_F10",
+      "label_node_id": "out_F10",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F12",
+      "edge_id": "edge_F12",
+      "source_node_id": "op_M2-OP3",
+      "target_node_id": "out_F12",
+      "label_node_id": "out_F12",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F15",
+      "edge_id": "edge_F15",
+      "source_node_id": "ext_F15",
+      "target_node_id": "op_M3-OP1",
+      "label_node_id": "ext_F15",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F16",
+      "edge_id": "edge_F16",
+      "source_node_id": "ext_F16",
+      "target_node_id": "op_M3-OP3",
+      "label_node_id": "ext_F16",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F19",
+      "edge_id": "edge_F19",
+      "source_node_id": "op_M3-OP8",
+      "target_node_id": "out_F19",
+      "label_node_id": "out_F19",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F20",
+      "edge_id": "edge_F20",
+      "source_node_id": "op_M3-OP7",
+      "target_node_id": "out_F20",
+      "label_node_id": "out_F20",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F21",
+      "edge_id": "edge_F21",
+      "source_node_id": "op_M3-OP3",
+      "target_node_id": "out_F21",
+      "label_node_id": "out_F21",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F22",
+      "edge_id": "edge_F22",
+      "source_node_id": "op_M3-OP8",
+      "target_node_id": "out_F22",
+      "label_node_id": "out_F22",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F23",
+      "edge_id": "edge_F23",
+      "source_node_id": "op_M3-OP7",
+      "target_node_id": "out_F23",
+      "label_node_id": "out_F23",
+      "provenance": "confirmed"
+    }
+  ],
+  "topology_edges": [
+    {
+      "edge_id": "top_TOP-01",
+      "source_node_id": "op_M2-OP1",
+      "target_node_id": "op_M2-OP2",
+      "material_label": "调质物料",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-02",
+      "source_node_id": "op_M2-OP2",
+      "target_node_id": "op_M2-OP3",
+      "material_label": "压片豆料",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-03",
+      "source_node_id": "op_M2-OP3",
+      "target_node_id": "op_M2-OP4",
+      "material_label": "萃取后料",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-04",
+      "source_node_id": "op_M3-OP1",
+      "target_node_id": "op_M3-OP2",
+      "material_label": "蛋白提取液",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-05",
+      "source_node_id": "op_M3-OP2",
+      "target_node_id": "op_M3-OP3",
+      "material_label": "蛋白提取液",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-06",
+      "source_node_id": "op_M3-OP3",
+      "target_node_id": "op_M3-OP4",
+      "material_label": "洗涤后蛋白料",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-07",
+      "source_node_id": "op_M3-OP4",
+      "target_node_id": "op_M3-OP8",
+      "material_label": "洗涤后蛋白浆",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-08",
+      "source_node_id": "op_M3-OP2",
+      "target_node_id": "op_M3-OP5",
+      "material_label": "蛋白提取液",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-09",
+      "source_node_id": "op_M3-OP6",
+      "target_node_id": "op_M3-OP7",
+      "material_label": "压榨后湿豆片",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-10",
+      "source_node_id": "op_M3-OP5",
+      "target_node_id": "op_M3-OP6",
+      "material_label": "洗涤后豆片",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-11",
+      "source_node_id": "water-wash-flakes",
+      "target_node_id": "op_M3-OP5",
+      "material_label": "豆片洗涤水",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-12",
+      "source_node_id": "op_M3-OP6",
+      "target_node_id": "press-water",
+      "material_label": "压榨工艺水",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    },
+    {
+      "edge_id": "top_TOP-13",
+      "source_node_id": "op_M3-OP4",
+      "target_node_id": "wash-water-out",
+      "material_label": "洗涤工艺水",
+      "evidence_ref": "绘图确认表",
+      "label_policy": "omit_unambiguous_internal"
+    }
+  ],
+  "module_annotations": [
+    {
+      "flow_id": "F04",
+      "process_id": "M1",
+      "node_id": "energy_M1_e",
+      "display_value": "0.0164",
+      "unit": "kWh",
+      "provenance": "confirmed",
+      "carrier": "电力"
+    },
+    {
+      "flow_id": "F05",
+      "process_id": "M2",
+      "node_id": "ext_F05",
+      "display_value": "0.6251",
+      "unit": "kg",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F07",
+      "process_id": "M2",
+      "node_id": "energy_M2_e",
+      "display_value": "0.0788",
+      "unit": "kWh",
+      "provenance": "confirmed",
+      "carrier": "电力"
+    },
+    {
+      "flow_id": "F08",
+      "process_id": "M2",
+      "node_id": "energy_M2_h",
+      "display_value": "1.8897",
+      "unit": "MJ",
+      "provenance": "confirmed",
+      "carrier": "热量"
+    },
+    {
+      "flow_id": "F11",
+      "process_id": "M2",
+      "node_id": "out_F11",
+      "display_value": "0.6251",
+      "unit": "kg",
+      "provenance": "confirmed"
+    },
+    {
+      "flow_id": "F17",
+      "process_id": "M3",
+      "node_id": "energy_M3_e",
+      "display_value": "0.0630",
+      "unit": "kWh",
+      "provenance": "confirmed",
+      "carrier": "电力",
+      "note": "含泵送 0.0082（×1.15）"
+    },
+    {
+      "flow_id": "F18",
+      "process_id": "M3",
+      "node_id": "energy_M3_h",
+      "display_value": "27.5008",
+      "unit": "MJ",
+      "provenance": "confirmed",
+      "carrier": "热量"
+    },
+    {
+      "flow_id": "F24",
+      "process_id": "M3",
+      "node_id": "ext_F24",
+      "display_value": "16.9800",
+      "unit": "kg",
+      "provenance": "confirmed"
+    }
+  ],
+  "numeric_labels": [
+    {
+      "flow_id": "F01",
+      "node_id": "ext_F01",
+      "role": "edge_endpoint",
+      "display_value": "2.7229",
+      "unit": "kg",
+      "label_name": "原始大豆",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F02",
+      "node_id": "lab_F02",
+      "role": "link_label",
+      "display_value": "2.5212",
+      "unit": "kg",
+      "label_name": "去壳大豆",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F03",
+      "node_id": "out_F03",
+      "role": "edge_endpoint",
+      "display_value": "0.2017",
+      "unit": "kg",
+      "label_name": "豆壳",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F04",
+      "node_id": "energy_M1_e",
+      "role": "module_energy",
+      "display_value": "0.0164",
+      "unit": "kWh",
+      "label_name": "电力",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F05",
+      "node_id": "ext_F05",
+      "role": "module_box",
+      "display_value": "0.6251",
+      "unit": "kg",
+      "label_name": "工艺水",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F06",
+      "node_id": "ext_F06",
+      "role": "edge_endpoint",
+      "display_value": "0.002728",
+      "unit": "kg",
+      "label_name": "新鲜正己烷",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F07",
+      "node_id": "energy_M2_e",
+      "role": "module_energy",
+      "display_value": "0.0788",
+      "unit": "kWh",
+      "label_name": "电力",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F08",
+      "node_id": "energy_M2_h",
+      "role": "module_energy",
+      "display_value": "1.8897",
+      "unit": "MJ",
+      "label_name": "热",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F09",
+      "node_id": "lab_F09",
+      "role": "link_label",
+      "display_value": "1.9852",
+      "unit": "kg",
+      "label_name": "白豆片 干物质 88%",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F10",
+      "node_id": "out_F10",
+      "role": "edge_endpoint",
+      "display_value": "0.4764",
+      "unit": "kg",
+      "label_name": "豆油",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F11",
+      "node_id": "out_F11",
+      "role": "module_box",
+      "display_value": "0.6251",
+      "unit": "kg",
+      "label_name": "工艺废水",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F12",
+      "node_id": "out_F12",
+      "role": "edge_endpoint",
+      "display_value": "0.002728",
+      "unit": "kg",
+      "label_name": "正己烷排放",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F15",
+      "node_id": "ext_F15",
+      "role": "edge_endpoint",
+      "display_value": "0.1241",
+      "unit": "L",
+      "label_name": "NaOH 10% 溶液",
+      "audit_mark": "*"
+    },
+    {
+      "flow_id": "F16",
+      "node_id": "ext_F16",
+      "role": "edge_endpoint",
+      "display_value": "0.1737",
+      "unit": "L",
+      "label_name": "HCl 10% 溶液",
+      "audit_mark": "*"
+    },
+    {
+      "flow_id": "F17",
+      "node_id": "energy_M3_e",
+      "role": "module_energy",
+      "display_value": "0.0630",
+      "unit": "kWh",
+      "label_name": "电力",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F18",
+      "node_id": "energy_M3_h",
+      "role": "module_energy",
+      "display_value": "27.5008",
+      "unit": "MJ",
+      "label_name": "热",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F19",
+      "node_id": "out_F19",
+      "role": "edge_endpoint",
+      "display_value": "1.0000",
+      "unit": "kg",
+      "label_name": "大豆分离蛋白（SPI） 干物质 95%",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F20",
+      "node_id": "out_F20",
+      "role": "edge_endpoint",
+      "display_value": "0.5449",
+      "unit": "kg",
+      "label_name": "提取后豆片 （含水约 10%）",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F21",
+      "node_id": "out_F21",
+      "role": "edge_endpoint",
+      "display_value": "11.4902",
+      "unit": "kg",
+      "label_name": "乳清水相",
+      "audit_mark": "*"
+    },
+    {
+      "flow_id": "F22",
+      "node_id": "out_F22",
+      "role": "edge_endpoint",
+      "display_value": "4.9375",
+      "unit": "kg",
+      "label_name": "蒸发水",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F23",
+      "node_id": "out_F23",
+      "role": "edge_endpoint",
+      "display_value": "0.2096",
+      "unit": "kg",
+      "label_name": "水蒸气",
+      "audit_mark": ""
+    },
+    {
+      "flow_id": "F24",
+      "node_id": "ext_F24",
+      "role": "module_box",
+      "display_value": "16.9800",
+      "unit": "kg",
+      "label_name": "外部取水",
+      "audit_mark": "*"
+    }
+  ],
+  "operation_io": [
+    {
+      "operation_id": "M1-OP1",
+      "drawing_node_id": "op_M1-OP1",
+      "purpose": "除杂、去除豆壳",
+      "input_edge_ids": [
+        "edge_F01"
+      ],
+      "output_edge_ids": [
+        "edge_F02",
+        "edge_F03"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M2-OP1",
+      "drawing_node_id": "op_M2-OP1",
+      "purpose": "调节豆粒状态",
+      "input_edge_ids": [
+        "edge_F02"
+      ],
+      "output_edge_ids": [
+        "top_TOP-01"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M2-OP2",
+      "drawing_node_id": "op_M2-OP2",
+      "purpose": "压薄以利萃取",
+      "input_edge_ids": [
+        "top_TOP-01"
+      ],
+      "output_edge_ids": [
+        "top_TOP-02"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M3-OP2",
+      "drawing_node_id": "op_M3-OP2",
+      "purpose": "分出蛋白提取液",
+      "input_edge_ids": [
+        "top_TOP-04"
+      ],
+      "output_edge_ids": [
+        "top_TOP-05",
+        "top_TOP-08"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M3-OP5",
+      "drawing_node_id": "op_M3-OP5",
+      "purpose": "洗涤湿豆片并回水",
+      "input_edge_ids": [
+        "top_TOP-08",
+        "top_TOP-11"
+      ],
+      "output_edge_ids": [
+        "top_TOP-10"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M3-OP6",
+      "drawing_node_id": "op_M3-OP6",
+      "purpose": "压出湿豆片中的水",
+      "input_edge_ids": [
+        "top_TOP-10"
+      ],
+      "output_edge_ids": [
+        "top_TOP-09",
+        "top_TOP-12"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M3-OP7",
+      "drawing_node_id": "op_M3-OP7",
+      "purpose": "干燥脱蛋白豆片",
+      "input_edge_ids": [
+        "top_TOP-09"
+      ],
+      "output_edge_ids": [
+        "edge_F20",
+        "edge_F23"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M3-OP8",
+      "drawing_node_id": "op_M3-OP8",
+      "purpose": "干燥蛋白浆液",
+      "input_edge_ids": [
+        "top_TOP-07"
+      ],
+      "output_edge_ids": [
+        "edge_F19",
+        "edge_F22"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    },
+    {
+      "operation_id": "M2-OP4",
+      "drawing_node_id": "op_M2-OP4",
+      "purpose": "去除残留溶剂",
+      "input_edge_ids": [
+        "top_TOP-03"
+      ],
+      "output_edge_ids": [
+        "edge_F09"
+      ],
+      "provenance": "模块级；操作级绑定待绘图确认"
+    }
+  ],
+  "visual_groups": [],
+  "operation_coverage": [
+    {
+      "operation_id": "M1-OP1",
+      "process_id": "M1",
+      "display_label": "清理、破碎与脱壳",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD;SRC-XLS-OLD;SRC-CLCA-AUDIT",
+      "drawing_node_id": "op_M1-OP1",
+      "status": "shown",
+      "levels": [
+        "操作定量"
+      ],
+      "purpose": "除杂、去除豆壳"
+    },
+    {
+      "operation_id": "M2-OP1",
+      "process_id": "M2",
+      "display_label": "调质",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M2-OP1",
+      "status": "shown",
+      "levels": [
+        "模块总量"
+      ],
+      "purpose": "调节豆粒状态"
+    },
+    {
+      "operation_id": "M2-OP2",
+      "process_id": "M2",
+      "display_label": "压片",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M2-OP2",
+      "status": "shown",
+      "levels": [
+        "模块总量"
+      ],
+      "purpose": "压薄以利萃取"
+    },
+    {
+      "operation_id": "M2-OP3",
+      "process_id": "M2",
+      "display_label": "正己烷萃取",
+      "occurrence_index": 1,
+      "source_refs": "SRC-MB;SRC-XLS-OLD",
+      "drawing_node_id": "op_M2-OP3",
+      "status": "partial",
+      "levels": [
+        "仅拓扑",
+        "操作定量",
+        "模块定量"
+      ],
+      "purpose": "用正己烷溶出豆油"
+    },
+    {
+      "operation_id": "M3-OP1",
+      "process_id": "M3",
+      "display_label": "浸泡 / 碱溶",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP1",
+      "status": "partial",
+      "levels": [
+        "操作定量",
+        "操作定量（加*）"
+      ],
+      "purpose": "碱溶大豆蛋白"
+    },
+    {
+      "operation_id": "M3-OP2",
+      "process_id": "M3",
+      "display_label": "离心 1",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP2",
+      "status": "shown",
+      "levels": [
+        "操作定量",
+        "模块定量"
+      ],
+      "purpose": "分出蛋白提取液"
+    },
+    {
+      "operation_id": "M3-OP3",
+      "process_id": "M3",
+      "display_label": "离心 3",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP3",
+      "status": "partial",
+      "levels": [
+        "操作定量（加*）"
+      ],
+      "purpose": "酸沉蛋白并分出乳清"
+    },
+    {
+      "operation_id": "M3-OP4",
+      "process_id": "M3",
+      "display_label": "离心 4",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP4",
+      "status": "partial",
+      "levels": [
+        "模块定量（加*）"
+      ],
+      "purpose": "洗涤蛋白沉淀"
+    },
+    {
+      "operation_id": "M3-OP5",
+      "process_id": "M3",
+      "display_label": "离心 2",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP5",
+      "status": "shown",
+      "levels": [
+        "操作定量"
+      ],
+      "purpose": "洗涤湿豆片并回水"
+    },
+    {
+      "operation_id": "M3-OP6",
+      "process_id": "M3",
+      "display_label": "压榨",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP6",
+      "status": "shown",
+      "levels": [
+        "模块定量"
+      ],
+      "purpose": "压出湿豆片中的水"
+    },
+    {
+      "operation_id": "M3-OP7",
+      "process_id": "M3",
+      "display_label": "闪蒸干燥",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP7",
+      "status": "shown",
+      "levels": [
+        "操作定量"
+      ],
+      "purpose": "干燥脱蛋白豆片"
+    },
+    {
+      "operation_id": "M3-OP8",
+      "process_id": "M3",
+      "display_label": "喷雾干燥",
+      "occurrence_index": 1,
+      "source_refs": "SRC-XLS-OLD",
+      "drawing_node_id": "op_M3-OP8",
+      "status": "shown",
+      "levels": [
+        "操作定量"
+      ],
+      "purpose": "干燥蛋白浆液"
+    },
+    {
+      "operation_id": "M2-OP4",
+      "process_id": "M2",
+      "display_label": "脱溶",
+      "occurrence_index": 1,
+      "source_refs": "SRC-PDF;SRC-DRAW-CONFIRM",
+      "drawing_node_id": "op_M2-OP4",
+      "status": "shown",
+      "levels": [
+        "仅拓扑"
+      ],
+      "purpose": "去除残留溶剂"
+    }
+  ],
+  "balances": [
+    {
+      "balance_id": "BAL-CHK01",
+      "scope": "F01;F02;F03",
+      "balance_type": "物质平衡",
+      "statement": "M1 输入=输出（含共产品）"
+    },
+    {
+      "balance_id": "BAL-CHK04",
+      "scope": "F04",
+      "balance_type": "单位检查",
+      "statement": "kJ→kWh 换算"
+    },
+    {
+      "balance_id": "BAL-CHK05",
+      "scope": "F07",
+      "balance_type": "单位检查",
+      "statement": "kJ→kWh 换算"
+    },
+    {
+      "balance_id": "BAL-CHK06",
+      "scope": "F08",
+      "balance_type": "单位检查",
+      "statement": "kJ→MJ 换算"
+    },
+    {
+      "balance_id": "BAL-CHK07",
+      "scope": "F17",
+      "balance_type": "版本检查",
+      "statement": "旧版 L6=3 硬编码；采用当前版值"
+    },
+    {
+      "balance_id": "BAL-CHK08",
+      "scope": "F18",
+      "balance_type": "代表值复算",
+      "statement": "kJ→MJ"
+    },
+    {
+      "balance_id": "BAL-CHK09",
+      "scope": "F02;F09",
+      "balance_type": "内部流检查",
+      "statement": "跨模块物流各只出现一次"
+    },
+    {
+      "balance_id": "BAL-CHK10",
+      "scope": "F05;F11",
+      "balance_type": "重复计入",
+      "statement": "同值但分属输入/输出两侧，不重复计入"
+    },
+    {
+      "balance_id": "BAL-CHK11",
+      "scope": "F12;F21",
+      "balance_type": "方向符号",
+      "statement": "负号≠负质量，方向单独记录"
+    },
+    {
+      "balance_id": "BAL-CHK12",
+      "scope": "ALL",
+      "balance_type": "覆盖检查",
+      "statement": "逐流记录完整性"
+    },
+    {
+      "balance_id": "BAL-CHK13",
+      "scope": "PS-SPI",
+      "balance_type": "能源汇总",
+      "statement": "电/热分别汇总，不合并载体"
+    },
+    {
+      "balance_id": "BAL-CHK14",
+      "scope": "ALL",
+      "balance_type": "方法处理",
+      "statement": "作者 ALCA 经济分配仅作方法证据"
+    },
+    {
+      "balance_id": "BAL-E1",
+      "scope": "M1",
+      "balance_type": "能源模块合计",
+      "inputs": "F04",
+      "status": "not_calculated",
+      "evidence_class": "author_value",
+      "display_text": "模块总量显示"
+    },
+    {
+      "balance_id": "BAL-E2",
+      "scope": "M2",
+      "balance_type": "能源模块合计",
+      "inputs": "F07;F08",
+      "status": "not_calculated",
+      "evidence_class": "author_value",
+      "display_text": "模块总量显示"
+    },
+    {
+      "balance_id": "BAL-E3",
+      "scope": "M3",
+      "balance_type": "能源模块合计",
+      "inputs": "F17;F18",
+      "status": "not_calculated",
+      "evidence_class": "author_value",
+      "display_text": "模块总量显示"
+    },
+    {
+      "balance_id": "BAL-ET",
+      "scope": "ALL",
+      "balance_type": "能源总计",
+      "inputs": "F04;F07;F08;F17;F18",
+      "status": "not_calculated",
+      "evidence_class": "author_value",
+      "display_text": "全链能源合计"
+    }
+  ],
+  "summary_tables": [
+    {
+      "title": "总输入清单（每 1 kg SPI）",
+      "columns": [
+        "物料",
+        "数量",
+        "单位",
+        "归属 / 用途"
+      ],
+      "rows": [
+        {
+          "flow_id": "F01",
+          "label": "原始大豆",
+          "value": "2.7229",
+          "unit": "kg",
+          "tag": "Ⅰ 原料",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F05",
+          "label": "工艺水（脱脂）",
+          "value": "0.6251",
+          "unit": "kg",
+          "tag": "Ⅱ 模块投入",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F24",
+          "label": "外部取水（tap water）",
+          "value": "16.9800",
+          "unit": "kg",
+          "tag": "Ⅲ 外部取水",
+          "audit_mark": "*"
+        },
+        {
+          "flow_id": "F06",
+          "label": "新鲜正己烷",
+          "value": "0.002728",
+          "unit": "kg",
+          "tag": "Ⅱ 萃取补充",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F15",
+          "label": "NaOH 10% 溶液",
+          "value": "0.1241",
+          "unit": "L",
+          "tag": "Ⅲ 碱溶配液",
+          "audit_mark": "*"
+        },
+        {
+          "flow_id": "F16",
+          "label": "HCl 10% 溶液",
+          "value": "0.1737",
+          "unit": "L",
+          "tag": "Ⅲ 酸化配液",
+          "audit_mark": "*"
+        }
+      ],
+      "table_id": "total-input",
+      "table_role": "total-input",
+      "row_source_ids": [
+        "F01",
+        "F05",
+        "F24",
+        "F06",
+        "F15",
+        "F16"
+      ],
+      "total_policy": "none",
+      "drawing_id_prefix": "total-input"
+    },
+    {
+      "title": "总输出清单（每 1 kg SPI）",
+      "columns": [
+        "物料 / 排放",
+        "数量",
+        "单位",
+        "性质"
+      ],
+      "rows": [
+        {
+          "flow_id": "F19",
+          "label": "大豆分离蛋白（SPI）",
+          "value": "1.0000",
+          "unit": "kg",
+          "tag": "目标产品",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F03",
+          "label": "豆壳",
+          "value": "0.2017",
+          "unit": "kg",
+          "tag": "副产品",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F10",
+          "label": "豆油",
+          "value": "0.4764",
+          "unit": "kg",
+          "tag": "副产品",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F20",
+          "label": "提取后豆片",
+          "value": "0.5449",
+          "unit": "kg",
+          "tag": "副产品",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F21",
+          "label": "乳清液",
+          "value": "11.4902",
+          "unit": "kg",
+          "tag": "工艺液相",
+          "audit_mark": "*"
+        },
+        {
+          "flow_id": "F11",
+          "label": "脱脂废水",
+          "value": "0.6251",
+          "unit": "kg",
+          "tag": "工艺废水",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F12",
+          "label": "正己烷排放",
+          "value": "0.002728",
+          "unit": "kg",
+          "tag": "大气排放",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F22",
+          "label": "蒸发水（喷雾干燥）",
+          "value": "4.9375",
+          "unit": "kg",
+          "tag": "干燥输出",
+          "audit_mark": ""
+        },
+        {
+          "flow_id": "F23",
+          "label": "闪蒸水蒸气",
+          "value": "0.2096",
+          "unit": "kg",
+          "tag": "干燥输出",
+          "audit_mark": ""
+        }
+      ],
+      "table_id": "total-output",
+      "table_role": "total-output",
+      "row_source_ids": [
+        "F19",
+        "F03",
+        "F10",
+        "F20",
+        "F21",
+        "F11",
+        "F12",
+        "F22",
+        "F23"
+      ],
+      "total_policy": "none",
+      "drawing_id_prefix": "total-output"
+    },
+    {
+      "title": "总能源投入",
+      "group_by": "过程ID",
+      "carriers": [
+        "电力",
+        "热量"
+      ],
+      "rows": [
+        {
+          "group": "Ⅰ 清理、破碎与脱壳",
+          "电力": "0.0164",
+          "热量": "—"
+        },
+        {
+          "group": "Ⅱ 大豆脱脂",
+          "电力": "0.0788",
+          "热量": "1.8897"
+        },
+        {
+          "group": "Ⅲ SPI 蛋白提取",
+          "电力": "0.0630",
+          "热量": "27.5008"
+        },
+        {
+          "group": "合计",
+          "电力": "0.1582",
+          "热量": "29.3906"
+        }
+      ],
+      "table_id": "total-energy",
+      "table_role": "total-energy",
+      "columns": [
+        "模块",
+        "电力（kWh）",
+        "热量（MJ）"
+      ],
+      "row_source_ids": [
+        "BAL-E1",
+        "BAL-E2",
+        "BAL-E3",
+        "BAL-ET"
+      ],
+      "total_policy": "last_row_total",
+      "drawing_id_prefix": "total-energy"
+    }
+  ],
+  "style": {
+    "palette": {},
+    "font_family": "Arial",
+    "font_sizes": {},
+    "node_styles": {},
+    "edge_styles": {},
+    "icon_policy": "none",
+    "reference_figures": []
+  },
+  "layout": {
+    "direction": "LR",
+    "algorithm": "horizontalFlow",
+    "workshop_order": [],
+    "main_axis": "horizontal_centerline",
+    "input_layer": "above_main_axis",
+    "branch_layer": "below_main_axis",
+    "branch_policy": "separate_lower_lane",
+    "route_defaults": {
+      "main": "straight",
+      "input": "straight_vertical",
+      "output": "straight_vertical",
+      "branch": "orthogonal_one_bend",
+      "recycle": "outer_channel"
+    },
+    "port_defaults": {
+      "main_source": "right_center",
+      "main_target": "left_center",
+      "input_source": "bottom_center",
+      "input_target": "top_center",
+      "output_source": "bottom_center",
+      "output_target": "top_center"
+    },
+    "bend_budget": {
+      "main_horizontal": 0,
+      "input_vertical": 0,
+      "output_vertical": 0,
+      "branch_orthogonal": 1,
+      "recycle_outer": 3
+    },
+    "label_clearance": null,
+    "node_spacing": null,
+    "layer_spacing": null,
+    "min_node_size": null,
+    "max_label_lines": null,
+    "target_size": null
+  },
+  "qa": {
+    "unique_node_ids": null,
+    "unique_flow_ids": null,
+    "valid_endpoints": null,
+    "direction_endpoint_consistency": null,
+    "workshop_coverage": null,
+    "granularity_review": null,
+    "branch_review": null,
+    "mapping_coverage": null,
+    "visual_group_membership": null,
+    "port_direction_consistency": null,
+    "bend_budget_passed": null,
+    "main_axis_alignment": null,
+    "no_duplicate_visual_flow": null,
+    "representative_values_present": null,
+    "units_present": null,
+    "physical_flow_filter": null,
+    "method_burdens_separated": null,
+    "calculation_audit_passed": null,
+    "data_confirmed": null,
+    "figure_confirmed": null,
+    "render_collision_check": null,
+    "final_size_readability": null,
+    "operation_coverage_complete": null,
+    "repeat_operation_count_match": null,
+    "balance_status_displayed": null,
+    "subbalance_not_overclaimed": null,
+    "minimum_font_size_passed": null,
+    "legend_readability_passed": null,
+    "canvas_utilization_passed": null,
+    "content_blueprint_gate": null,
+    "grayscale_layout_gate": null,
+    "content_recheck_gate": null,
+    "visual_optimization_gate": null,
+    "final_technical_gate": null,
+    "table_structure_passed": null,
+    "numeric_alignment_passed": null,
+    "numbering_consistency_passed": null,
+    "color_semantics_passed": null,
+    "grayscale_readability_passed": null,
+    "blocking_issues": [],
+    "display_layer_flags": []
+  },
+  "operation_energy": [
+    {
+      "operation_id": "M3-OP1",
+      "drawing_node_id": "op_M3-OP1",
+      "carrier": "热量",
+      "display_value": "3.0438",
+      "unit": "MJ",
+      "note": "碱溶保温热耗；模块热合计 27.5008 MJ 已核"
+    },
+    {
+      "operation_id": "M3-OP2",
+      "drawing_node_id": "op_M3-OP2",
+      "carrier": "电力",
+      "display_value": "0.0201",
+      "unit": "kWh",
+      "note": "离心电耗=P17×处理量；模块电含泵送 0.0630 已核"
+    },
+    {
+      "operation_id": "M3-OP5",
+      "drawing_node_id": "op_M3-OP5",
+      "carrier": "电力",
+      "display_value": "0.001257",
+      "unit": "kWh",
+      "note": "离心电耗=P17×处理量（洗涤回水不按额外取水）"
+    },
+    {
+      "operation_id": "M3-OP6",
+      "drawing_node_id": "op_M3-OP6",
+      "carrier": "电力",
+      "display_value": "0.000777",
+      "unit": "kWh",
+      "note": "压榨电耗=P18×处理量"
+    },
+    {
+      "operation_id": "M3-OP7",
+      "drawing_node_id": "op_M3-OP7",
+      "carrier": "热量",
+      "display_value": "0.7545",
+      "unit": "MJ",
+      "note": "闪蒸热耗=P20×蒸发水 0.2096 kg"
+    },
+    {
+      "operation_id": "M3-OP3",
+      "drawing_node_id": "op_M3-OP3",
+      "carrier": "电力",
+      "display_value": "0.0189",
+      "unit": "kWh",
+      "note": "离心电耗=P17×处理量"
+    },
+    {
+      "operation_id": "M3-OP4",
+      "drawing_node_id": "op_M3-OP4",
+      "carrier": "电力",
+      "display_value": "0.0138",
+      "unit": "kWh",
+      "note": "离心电耗=P17×处理量"
+    },
+    {
+      "operation_id": "M3-OP8",
+      "drawing_node_id": "op_M3-OP8",
+      "carrier": "热量",
+      "display_value": "23.7025",
+      "unit": "MJ",
+      "note": "喷雾热耗=P21×蒸发水 4.9375 kg；进料干物质 P22"
+    }
+  ],
+  "extra_labels": [
+    {
+      "node_id": "water-wash-flakes",
+      "text": "豆片洗涤水",
+      "host": "M3-OP5"
+    },
+    {
+      "node_id": "press-water",
+      "text": "压榨工艺水",
+      "host": "M3-OP6"
+    },
+    {
+      "node_id": "wash-water-out",
+      "text": "洗涤工艺水",
+      "host": "M3-OP5"
+    }
+  ],
+  "_energy_by_module": {
+    "M1|电力": 0.016388,
+    "M2|电力": 0.078847,
+    "M2|热量": 1.889747,
+    "M3|电力": 0.063,
+    "M3|热量": 27.500833
+  },
+  "_energy_row_ids": [
+    "BAL-E1",
+    "BAL-E2",
+    "BAL-E3",
+    "BAL-ET"
+  ]
+}

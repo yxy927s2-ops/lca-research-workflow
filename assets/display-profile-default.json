@@ -1,0 +1,89 @@
+{
+  "profile_id": "display-default-v1",
+  "description": "默认展示层规则：以 Siegrist 2026 SPI 案例 07 图为首个验收样本。分类规则按顺序匹配，先命中先生效；用户可在项目内覆盖本文件。",
+  "id_conventions": {
+    "module_frame": "{process_id}",
+    "operation_node": "op_{operation_id}",
+    "external_input_node": "ext_{flow_id}",
+    "external_output_node": "out_{flow_id}",
+    "internal_link_label": "lab_{flow_id}",
+    "module_energy": "energy_{process_id}",
+    "summary_cell": "{table_id}-row-{row}-{col}"
+  },
+  "decimals": {
+    "default": 4,
+    "by_unit": {"m3": 6, "m³": 6},
+    "note": "by_unit 只覆盖必须以固定位数显示的体积单位；kg/kWh/MJ/L 走数值量级规则（≥0.01 用 4 位，否则 6 位），保证 0.002728 kg 这类小量不丢位"
+  },
+  "summary_tables": {
+    "input": {
+      "title": "总输入清单（每 1 kg SPI）",
+      "columns": ["物料", "数量", "单位", "归属 / 用途"],
+      "row_order": ["Ⅰ 原料", "Ⅱ 模块投入", "Ⅲ 外部取水", "Ⅱ 萃取补充", "Ⅲ 碱溶配液", "Ⅲ 酸化配液"],
+      "rules": [
+        {"match": {"流类别": "能源"}, "action": "skip", "reason": "能源入总能源表"},
+        {"match": {"是否显示": "否"}, "action": "skip", "reason": "显示决定为否"},
+        {"match": {"是否内部流": "是"}, "action": "skip", "reason": "内部流不进总表"},
+        {"match": {"方法采用状态": "*步骤加水*"}, "action": "skip", "reason": "工艺投水不进 LCI（Q04）"},
+        {"match": {"值类型": "substitution_candidate"}, "action": "skip"},
+        {"match": {"流ID": "F01"}, "row": {"归属": "Ⅰ 原料", "label": "原始大豆"}},
+        {"match": {"流ID": "F05"}, "row": {"归属": "Ⅱ 模块投入", "label": "工艺水（脱脂）"}},
+        {"match": {"流ID": "F24"}, "row": {"归属": "Ⅲ 外部取水", "label": "外部取水（tap water）"}},
+        {"match": {"流ID": "F06"}, "row": {"归属": "Ⅱ 萃取补充", "label": "新鲜正己烷"}},
+        {"match": {"流ID": "F15"}, "row": {"归属": "Ⅲ 碱溶配液", "label": "NaOH 10% 溶液"}},
+        {"match": {"流ID": "F16"}, "row": {"归属": "Ⅲ 酸化配液", "label": "HCl 10% 溶液"}},
+        {"match": {"方向": "输入"}, "row": {"归属": "原料投入"}}
+      ]
+    },
+    "output": {
+      "title": "总输出清单（每 1 kg SPI）",
+      "columns": ["物料 / 排放", "数量", "单位", "性质"],
+      "row_order": ["目标产品", "副产品", "工艺液相", "工艺废水", "大气排放", "干燥输出"],
+      "rules": [
+        {"match": {"流类别": "能源"}, "action": "skip"},
+        {"match": {"是否显示": "否"}, "action": "skip"},
+        {"match": {"是否内部流": "是"}, "action": "skip"},
+        {"match": {"方法采用状态": "*步骤加水*"}, "action": "skip"},
+        {"match": {"值类型": "substitution_candidate"}, "action": "skip"},
+        {"match": {"流ID": "F19"}, "row": {"去向": "目标产品", "label": "大豆分离蛋白（SPI）"}},
+        {"match": {"流ID": "F03"}, "row": {"去向": "副产品", "label": "豆壳"}},
+        {"match": {"流ID": "F10"}, "row": {"去向": "副产品"}},
+        {"match": {"流ID": "F20"}, "row": {"去向": "副产品", "label": "提取后豆片"}},
+        {"match": {"流ID": "F21"}, "row": {"去向": "工艺液相", "label": "乳清液"}},
+        {"match": {"流ID": "F11"}, "row": {"去向": "工艺废水", "label": "脱脂废水"}},
+        {"match": {"流ID": "F12"}, "row": {"去向": "大气排放", "label": "正己烷排放"}},
+        {"match": {"流ID": "F22"}, "row": {"去向": "干燥输出", "label": "蒸发水（喷雾干燥）"}},
+        {"match": {"流ID": "F23"}, "row": {"去向": "干燥输出", "label": "闪蒸水蒸气"}},
+        {"match": {"方向": "输出"}, "row": {"去向": "其他输出"}}
+      ]
+    },
+    "energy": {
+      "title": "总能源投入",
+      "group_by": "过程ID",
+      "carriers": ["电力", "热量"],
+      "carrier_headers": {"电力": "电力（kWh）", "热量": "热量（MJ）"},
+      "group_names": {"M1": "Ⅰ 清理、破碎与脱壳", "M2": "Ⅱ 大豆脱脂", "M3": "Ⅲ SPI 蛋白提取"},
+      "empty_cell": "—",
+      "total_row": "合计"
+    }
+  },
+  "op_purpose": {
+    "M1-OP1": "除杂、去除豆壳",
+    "M2-OP1": "调节豆粒状态",
+    "M2-OP2": "压薄以利萃取",
+    "M2-OP3": "用正己烷溶出豆油",
+    "M2-OP4": "去除残留溶剂",
+    "M3-OP1": "碱溶大豆蛋白",
+    "M3-OP2": "分出蛋白提取液",
+    "M3-OP3": "酸沉蛋白并分出乳清",
+    "M3-OP4": "洗涤蛋白沉淀",
+    "M3-OP5": "洗涤湿豆片并回水",
+    "M3-OP6": "压出湿豆片中的水",
+    "M3-OP7": "干燥脱蛋白豆片",
+    "M3-OP8": "干燥蛋白浆液"
+  },
+  "judgment_flags": {
+    "op_binding_missing": "绘图确认表未给操作级端点；display_edges 暂以模块框为端点，需用户确认后细化",
+    "topology_missing": "绘图确认表未给操作间拓扑；topology_edges 为空，需用户确认后补"
+  }
+}

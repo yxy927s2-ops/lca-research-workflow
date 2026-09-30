@@ -1,0 +1,1456 @@
+{
+ "canvas": {
+  "pageWidth": 3040.0,
+  "pageHeight": 1715.0
+ },
+ "cells": {
+  "M2": {
+   "x": 570.0,
+   "y": 260.0,
+   "w": 835.0,
+   "h": 870.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=2;container=1;pointerEvents=0;fillColor=#F6FAFC;strokeColor=#A8C7DA;strokeWidth=1.5;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "PR-DEFAT-header": {
+   "x": 0.9,
+   "y": 1.0,
+   "w": 833.1,
+   "h": 62.0,
+   "parent": "M2",
+   "style": "fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "PR-DEFAT-en": {
+   "x": 9.5,
+   "y": 65.0,
+   "w": 816.0,
+   "h": 36.0,
+   "parent": "M2",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M2-OP1": {
+   "x": 38.0,
+   "y": 285.0,
+   "w": 151.8,
+   "h": 90.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M2-OP2": {
+   "x": 227.7,
+   "y": 285.0,
+   "w": 151.8,
+   "h": 90.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M2-OP3": {
+   "x": 417.5,
+   "y": 285.0,
+   "w": 151.8,
+   "h": 90.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M2-OP4": {
+   "x": 631.0,
+   "y": 285.0,
+   "w": 151.8,
+   "h": 90.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "ext_F06": {
+   "x": 398.5,
+   "y": 140.0,
+   "w": 189.8,
+   "h": 84.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F10": {
+   "x": 284.7,
+   "y": 500.0,
+   "w": 180.3,
+   "h": 80.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "ext_F05": {
+   "x": 272.8,
+   "y": 633.0,
+   "w": 237.2,
+   "h": 84.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F11": {
+   "x": 23.7,
+   "y": 630.0,
+   "w": 218.2,
+   "h": 90.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F12": {
+   "x": 510.0,
+   "y": 500.0,
+   "w": 218.2,
+   "h": 80.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "energy_M2_e": {
+   "x": 23.7,
+   "y": 765.0,
+   "w": 218.2,
+   "h": 70.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "energy_M2_h": {
+   "x": 265.7,
+   "y": 765.0,
+   "w": 218.2,
+   "h": 70.0,
+   "parent": "M2",
+   "style": "rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "title": {
+   "x": 1112.0,
+   "y": 90.0,
+   "w": 816.0,
+   "h": 60.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=40;fontStyle=1;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "subtitle": {
+   "x": 40.0,
+   "y": 166.0,
+   "w": 2960.0,
+   "h": 40.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "M1": {
+   "x": 40.0,
+   "y": 260.0,
+   "w": 506.0,
+   "h": 870.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=2;container=1;pointerEvents=0;fillColor=#F6FAFC;strokeColor=#A8C7DA;strokeWidth=1.5;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "PR-DEHULL-header": {
+   "x": 1.0,
+   "y": 1.0,
+   "w": 505.0,
+   "h": 62.0,
+   "parent": "M1",
+   "style": "fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "PR-DEHULL-en": {
+   "x": 10.0,
+   "y": 65.0,
+   "w": 445.0,
+   "h": 36.0,
+   "parent": "M1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "ext_F01": {
+   "x": 15.0,
+   "y": 120.0,
+   "w": 150.0,
+   "h": 90.0,
+   "parent": "M1",
+   "style": "rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M1-OP1": {
+   "x": 170.0,
+   "y": 285.0,
+   "w": 190.0,
+   "h": 90.0,
+   "parent": "M1",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F03": {
+   "x": 170.0,
+   "y": 490.0,
+   "w": 190.0,
+   "h": 85.0,
+   "parent": "M1",
+   "style": "rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "energy_M1_e": {
+   "x": 40.0,
+   "y": 765.0,
+   "w": 250.0,
+   "h": 70.0,
+   "parent": "M1",
+   "style": "rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "lab_F02": {
+   "x": 400.0,
+   "y": 260.0,
+   "w": 125.0,
+   "h": 55.0,
+   "parent": "M1",
+   "style": "text;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;fillColor=#ffff88;strokeColor=#36393d;"
+  },
+  "M3": {
+   "x": 1429.0,
+   "y": 260.0,
+   "w": 1575.0,
+   "h": 870.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=2;container=1;pointerEvents=0;fillColor=#F6FAFC;strokeColor=light-dark(#4490ca, #9477ba);strokeWidth=1.5;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "PR-ISOLATE-header": {
+   "x": 1.0,
+   "y": 1.0,
+   "w": 1573.0,
+   "h": 62.0,
+   "parent": "M3",
+   "style": "fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "PR-ISOLATE-en": {
+   "x": 10.0,
+   "y": 65.0,
+   "w": 1555.0,
+   "h": 36.0,
+   "parent": "M3",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP1": {
+   "x": 60.0,
+   "y": 282.0,
+   "w": 180.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP2": {
+   "x": 330.0,
+   "y": 282.0,
+   "w": 180.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP5": {
+   "x": 580.0,
+   "y": 282.0,
+   "w": 185.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP6": {
+   "x": 830.0,
+   "y": 282.0,
+   "w": 170.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP7": {
+   "x": 1065.0,
+   "y": 282.0,
+   "w": 170.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP3": {
+   "x": 330.0,
+   "y": 545.0,
+   "w": 185.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP4": {
+   "x": 830.0,
+   "y": 545.0,
+   "w": 170.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "op_M3-OP8": {
+   "x": 1065.0,
+   "y": 545.0,
+   "w": 170.0,
+   "h": 96.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F20": {
+   "x": 1310.0,
+   "y": 287.0,
+   "w": 230.0,
+   "h": 86.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F19": {
+   "x": 1310.0,
+   "y": 548.0,
+   "w": 230.0,
+   "h": 90.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#DBEEDD;strokeColor=#3F7951;strokeWidth=2.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "ext_F15": {
+   "x": 30.0,
+   "y": 75.5,
+   "w": 240.0,
+   "h": 98.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "water-wash-flakes": {
+   "x": 580.0,
+   "y": 120.0,
+   "w": 185.0,
+   "h": 62.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "ext_F16": {
+   "x": 40.0,
+   "y": 540.0,
+   "w": 230.0,
+   "h": 105.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "press-water": {
+   "x": 830.0,
+   "y": 155.0,
+   "w": 170.0,
+   "h": 45.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "wash-water-out": {
+   "x": 830.0,
+   "y": 685.0,
+   "w": 170.0,
+   "h": 50.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F21": {
+   "x": 307.5,
+   "y": 685.0,
+   "w": 230.0,
+   "h": 64.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F23": {
+   "x": 1140.0,
+   "y": 128.5,
+   "w": 170.0,
+   "h": 45.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "out_F22": {
+   "x": 1050.0,
+   "y": 685.0,
+   "w": 200.0,
+   "h": 64.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "ext_F24": {
+   "x": 30.0,
+   "y": 765.0,
+   "w": 247.5,
+   "h": 70.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "energy_M3_e": {
+   "x": 307.5,
+   "y": 765.0,
+   "w": 247.5,
+   "h": 84.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "energy_M3_h": {
+   "x": 690.0,
+   "y": 765.0,
+   "w": 295.0,
+   "h": 70.0,
+   "parent": "M3",
+   "style": "rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;"
+  },
+  "lab_F09": {
+   "x": 1370.0,
+   "y": 467.0,
+   "w": 105.0,
+   "h": 105.0,
+   "parent": "1",
+   "style": "text;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;fillColor=#ffff88;strokeColor=#36393d;"
+  },
+  "total-input-title": {
+   "x": 35.0,
+   "y": 1155.0,
+   "w": 955.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-header-0": {
+   "x": 35.0,
+   "y": 1210.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-input-header-1": {
+   "x": 415.0,
+   "y": 1210.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-input-header-2": {
+   "x": 610.0,
+   "y": 1210.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-input-header-3": {
+   "x": 710.0,
+   "y": 1210.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-input-row-0-0": {
+   "x": 35.0,
+   "y": 1265.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-0-1": {
+   "x": 415.0,
+   "y": 1265.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-0-2": {
+   "x": 610.0,
+   "y": 1265.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-0-3": {
+   "x": 710.0,
+   "y": 1265.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-1-0": {
+   "x": 35.0,
+   "y": 1320.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-1-1": {
+   "x": 415.0,
+   "y": 1320.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-1-2": {
+   "x": 610.0,
+   "y": 1320.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-1-3": {
+   "x": 710.0,
+   "y": 1320.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-2-0": {
+   "x": 35.0,
+   "y": 1375.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-2-1": {
+   "x": 415.0,
+   "y": 1375.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-2-2": {
+   "x": 610.0,
+   "y": 1375.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-2-3": {
+   "x": 710.0,
+   "y": 1375.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-3-0": {
+   "x": 35.0,
+   "y": 1430.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-3-1": {
+   "x": 415.0,
+   "y": 1430.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-3-2": {
+   "x": 610.0,
+   "y": 1430.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-3-3": {
+   "x": 710.0,
+   "y": 1430.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-4-0": {
+   "x": 35.0,
+   "y": 1485.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-4-1": {
+   "x": 415.0,
+   "y": 1485.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-4-2": {
+   "x": 610.0,
+   "y": 1485.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-4-3": {
+   "x": 710.0,
+   "y": 1485.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-input-row-5-0": {
+   "x": 35.0,
+   "y": 1540.0,
+   "w": 380.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-5-1": {
+   "x": 415.0,
+   "y": 1540.0,
+   "w": 195.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-5-2": {
+   "x": 610.0,
+   "y": 1540.0,
+   "w": 100.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-input-row-5-3": {
+   "x": 710.0,
+   "y": 1540.0,
+   "w": 280.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-title": {
+   "x": 1015.0,
+   "y": 1155.0,
+   "w": 1020.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-header-0": {
+   "x": 1015.0,
+   "y": 1210.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-output-header-1": {
+   "x": 1425.0,
+   "y": 1210.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-output-header-2": {
+   "x": 1635.0,
+   "y": 1210.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-output-header-3": {
+   "x": 1740.0,
+   "y": 1210.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-output-row-0-0": {
+   "x": 1015.0,
+   "y": 1253.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-0-1": {
+   "x": 1425.0,
+   "y": 1253.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-0-2": {
+   "x": 1635.0,
+   "y": 1253.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-0-3": {
+   "x": 1740.0,
+   "y": 1253.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-1-0": {
+   "x": 1015.0,
+   "y": 1296.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-1-1": {
+   "x": 1425.0,
+   "y": 1296.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-1-2": {
+   "x": 1635.0,
+   "y": 1296.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-1-3": {
+   "x": 1740.0,
+   "y": 1296.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-2-0": {
+   "x": 1015.0,
+   "y": 1339.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-2-1": {
+   "x": 1425.0,
+   "y": 1339.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-2-2": {
+   "x": 1635.0,
+   "y": 1339.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-2-3": {
+   "x": 1740.0,
+   "y": 1339.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-3-0": {
+   "x": 1015.0,
+   "y": 1382.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-3-1": {
+   "x": 1425.0,
+   "y": 1382.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-3-2": {
+   "x": 1635.0,
+   "y": 1382.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-3-3": {
+   "x": 1740.0,
+   "y": 1382.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-4-0": {
+   "x": 1015.0,
+   "y": 1425.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-4-1": {
+   "x": 1425.0,
+   "y": 1425.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-4-2": {
+   "x": 1635.0,
+   "y": 1425.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-4-3": {
+   "x": 1740.0,
+   "y": 1425.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-5-0": {
+   "x": 1015.0,
+   "y": 1468.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-5-1": {
+   "x": 1425.0,
+   "y": 1468.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-5-2": {
+   "x": 1635.0,
+   "y": 1468.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-5-3": {
+   "x": 1740.0,
+   "y": 1468.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-6-0": {
+   "x": 1015.0,
+   "y": 1511.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-6-1": {
+   "x": 1425.0,
+   "y": 1511.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-6-2": {
+   "x": 1635.0,
+   "y": 1511.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-6-3": {
+   "x": 1740.0,
+   "y": 1511.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-7-0": {
+   "x": 1015.0,
+   "y": 1554.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-7-1": {
+   "x": 1425.0,
+   "y": 1554.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-7-2": {
+   "x": 1635.0,
+   "y": 1554.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-output-row-7-3": {
+   "x": 1740.0,
+   "y": 1554.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-energy-title": {
+   "x": 2060.0,
+   "y": 1155.0,
+   "w": 945.0,
+   "h": 55.0,
+   "parent": "1",
+   "style": "fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-header-0": {
+   "x": 2060.0,
+   "y": 1210.0,
+   "w": 480.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-energy-header-1": {
+   "x": 2540.0,
+   "y": 1210.0,
+   "w": 225.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-energy-header-2": {
+   "x": 2765.0,
+   "y": 1210.0,
+   "w": 240.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;"
+  },
+  "total-energy-row-0-0": {
+   "x": 2060.0,
+   "y": 1292.0,
+   "w": 480.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-row-0-1": {
+   "x": 2540.0,
+   "y": 1292.0,
+   "w": 225.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-row-0-2": {
+   "x": 2765.0,
+   "y": 1292.0,
+   "w": 240.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-row-1-0": {
+   "x": 2060.0,
+   "y": 1374.0,
+   "w": 480.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-energy-row-1-1": {
+   "x": 2540.0,
+   "y": 1374.0,
+   "w": 225.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-energy-row-1-2": {
+   "x": 2765.0,
+   "y": 1374.0,
+   "w": 240.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;"
+  },
+  "total-energy-row-2-0": {
+   "x": 2060.0,
+   "y": 1456.0,
+   "w": 480.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-row-2-1": {
+   "x": 2540.0,
+   "y": 1456.0,
+   "w": 225.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-row-2-2": {
+   "x": 2765.0,
+   "y": 1456.0,
+   "w": 240.0,
+   "h": 82.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-energy-row-3-0": {
+   "x": 2060.0,
+   "y": 1538.0,
+   "w": 480.0,
+   "h": 58.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=28;fontStyle=1;align=left;verticalAlign=middle;spacing=8;fillColor=#FBE8E2;"
+  },
+  "total-energy-row-3-1": {
+   "x": 2540.0,
+   "y": 1538.0,
+   "w": 225.0,
+   "h": 58.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=28;fontStyle=1;align=right;verticalAlign=middle;spacing=8;fillColor=#FBE8E2;"
+  },
+  "total-energy-row-3-2": {
+   "x": 2765.0,
+   "y": 1538.0,
+   "w": 240.0,
+   "h": 58.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=28;fontStyle=1;align=right;verticalAlign=middle;spacing=8;fillColor=#FBE8E2;"
+  },
+  "figure-note": {
+   "x": 40.0,
+   "y": 1650.0,
+   "w": 2960.0,
+   "h": 31.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "source-note": {
+   "x": 40.0,
+   "y": 1682.0,
+   "w": 2960.0,
+   "h": 27.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "legend-band": {
+   "x": 70.0,
+   "y": 140.0,
+   "w": 756.3,
+   "h": 92.0,
+   "parent": "1",
+   "style": "fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-title": {
+   "x": 86.2,
+   "y": 170.0,
+   "w": 70.4,
+   "h": 36.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=25;fontStyle=1;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-box-0": {
+   "x": 167.2,
+   "y": 167.0,
+   "w": 44.5,
+   "h": 35.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-label-0": {
+   "x": 220.6,
+   "y": 160.0,
+   "w": 210.5,
+   "h": 48.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-box-2": {
+   "x": 333.2,
+   "y": 167.0,
+   "w": 44.5,
+   "h": 35.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-label-2": {
+   "x": 397.9,
+   "y": 160.0,
+   "w": 210.5,
+   "h": 48.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-box-3": {
+   "x": 503.2,
+   "y": 166.5,
+   "w": 44.5,
+   "h": 35.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-label-3": {
+   "x": 568.0,
+   "y": 160.0,
+   "w": 210.5,
+   "h": 48.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-box-4": {
+   "x": 660.0,
+   "y": 166.5,
+   "w": 44.5,
+   "h": 35.0,
+   "parent": "1",
+   "style": "rounded=1;arcSize=0;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "legend-label-4": {
+   "x": 720.0,
+   "y": 160.0,
+   "w": 102.2,
+   "h": 48.0,
+   "parent": "1",
+   "style": "text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;"
+  },
+  "total-output-row-8-0": {
+   "x": 1015.0,
+   "y": 1597.0,
+   "w": 410.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-8-1": {
+   "x": 1425.0,
+   "y": 1597.0,
+   "w": 210.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-8-2": {
+   "x": 1635.0,
+   "y": 1597.0,
+   "w": 105.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;"
+  },
+  "total-output-row-8-3": {
+   "x": 1740.0,
+   "y": 1597.0,
+   "w": 295.0,
+   "h": 43.0,
+   "parent": "1",
+   "style": "fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;"
+  }
+ },
+ "text": {
+  "PR-DEFAT-header": "Ⅱ 大豆脱脂",
+  "PR-DEFAT-en": "Conditioning · flaking · extraction · desolventizing",
+  "title": "大豆分离蛋白（SPI）基于流程的前景清单",
+  "subtitle": "功能单位：1 kg SPI 产品 Siegrist et al., 2026 加工前景 · 作者参数化模型代表情景",
+  "PR-DEHULL-header": "Ⅰ 清理、破碎与脱壳",
+  "PR-DEHULL-en": "Cleaning & dehulling",
+  "PR-ISOLATE-header": "Ⅲ SPI 蛋白提取",
+  "PR-ISOLATE-en": "Isoelectric precipitation",
+  "total-input-title": "总输入清单（每 1 kg SPI）",
+  "total-input-header-0": "物料",
+  "total-input-header-1": "数量",
+  "total-input-header-2": "单位",
+  "total-input-header-3": "归属 / 用途",
+  "total-input-row-0-0": "原始大豆",
+  "total-input-row-0-1": "2.7229",
+  "total-input-row-0-2": "kg",
+  "total-input-row-0-3": "Ⅰ 原料",
+  "total-input-row-1-0": "工艺水（脱脂）",
+  "total-input-row-1-1": "0.6251",
+  "total-input-row-1-2": "kg",
+  "total-input-row-1-3": "Ⅱ 模块投入",
+  "total-input-row-2-0": "外部取水（tap water）",
+  "total-input-row-2-1": "16.9800",
+  "total-input-row-2-2": "kg",
+  "total-input-row-2-3": "Ⅲ 外部取水",
+  "total-input-row-3-0": "新鲜正己烷",
+  "total-input-row-3-1": "0.002728",
+  "total-input-row-3-2": "kg",
+  "total-input-row-3-3": "Ⅱ 萃取补充",
+  "total-input-row-4-0": "NaOH 10% 溶液",
+  "total-input-row-4-1": "0.1241",
+  "total-input-row-4-2": "L",
+  "total-input-row-4-3": "Ⅲ 碱溶配液*",
+  "total-input-row-5-0": "HCl 10% 溶液",
+  "total-input-row-5-1": "0.1737",
+  "total-input-row-5-2": "L",
+  "total-input-row-5-3": "Ⅲ 酸化配液*",
+  "total-output-title": "总输出清单（每 1 kg SPI）",
+  "total-output-header-0": "物料 / 排放",
+  "total-output-header-1": "数量",
+  "total-output-header-2": "单位",
+  "total-output-header-3": "性质",
+  "total-output-row-0-0": "大豆分离蛋白（SPI）",
+  "total-output-row-0-1": "1.0000",
+  "total-output-row-0-2": "kg",
+  "total-output-row-0-3": "目标产品",
+  "total-output-row-1-0": "豆壳",
+  "total-output-row-1-1": "0.2017",
+  "total-output-row-1-2": "kg",
+  "total-output-row-1-3": "副产品",
+  "total-output-row-2-0": "豆油",
+  "total-output-row-2-1": "0.4764",
+  "total-output-row-2-2": "kg",
+  "total-output-row-2-3": "副产品",
+  "total-output-row-3-0": "提取后豆片",
+  "total-output-row-3-1": "0.5449",
+  "total-output-row-3-2": "kg",
+  "total-output-row-3-3": "副产品",
+  "total-output-row-4-0": "乳清液",
+  "total-output-row-4-1": "11.4902",
+  "total-output-row-4-2": "kg",
+  "total-output-row-4-3": "工艺液相",
+  "total-output-row-5-0": "脱脂废水",
+  "total-output-row-5-1": "0.6251",
+  "total-output-row-5-2": "kg",
+  "total-output-row-5-3": "工艺废水",
+  "total-output-row-6-0": "正己烷排放",
+  "total-output-row-6-1": "0.002728",
+  "total-output-row-6-2": "kg",
+  "total-output-row-6-3": "大气排放",
+  "total-output-row-7-0": "蒸发水（喷雾干燥）",
+  "total-output-row-7-1": "4.9375",
+  "total-output-row-7-2": "kg",
+  "total-output-row-7-3": "干燥输出",
+  "total-energy-title": "总能源投入（每 1 kg SPI）",
+  "total-energy-header-0": "模块",
+  "total-energy-header-1": "电力（kWh）",
+  "total-energy-header-2": "热量（MJ）",
+  "total-energy-row-0-0": "Ⅰ 清理、破碎与脱壳",
+  "total-energy-row-0-1": "0.0164",
+  "total-energy-row-0-2": "—",
+  "total-energy-row-1-0": "Ⅱ 大豆脱脂",
+  "total-energy-row-1-1": "0.0788",
+  "total-energy-row-1-2": "1.8897",
+  "total-energy-row-2-0": "Ⅲ SPI 蛋白提取",
+  "total-energy-row-2-1": "0.0630",
+  "total-energy-row-2-2": "27.5008",
+  "total-energy-row-3-0": "合计",
+  "total-energy-row-3-1": "0.1582",
+  "total-energy-row-3-2": "29.3906",
+  "figure-note": "模块Ⅱ水、电、热仅有模块总量；模块Ⅲ能耗按作者公式拆至操作，泵送电耗 0.0082 kWh（×1.15）注于模块Ⅲ电力框内。模块Ⅲ外部取水 16.98 kg（作者 tap_water 公式值）、废水排放 11.490 kg（0.01149 m³）；工艺投水 25.852 kg 含厂内循环，不进 LCI（口径详见冻结清单 Q04）。NaOH/HCl 按 10% 溶液体积计（* 为审计中值，口径详见冻结清单问题表）。脱脂废水原文以 m³ 列示（0.000625 m³＝0.6251 kg），图中统一 kg。图中水量除注明外均为 kg（质量口径）。蒸发水原文以 m³ 列示（0.004938 m³＝4.9375 kg），图中统一 kg。",
+  "source-note": "来源：Siegrist et al. (2026), Sustainable Production and Consumption 62, 127–138；官方补充数据 mmc2（SPI、Defatting、Formulas_SPI 工作表），内容与作者 GitHub runtime 数据一致。干物质条件：白豆片 88%（SPI!H29）、SPI 95%（dm_output）、豆渣含水约 10%（作者公式假设）；图中水量统一为 kg 质量口径，m³ 仅为换算参考。",
+  "legend-title": "图例",
+  "legend-label-0": "单元操作",
+  "legend-label-2": "水与液相",
+  "legend-label-3": "化学品",
+  "legend-label-4": "能源投入",
+  "total-output-row-8-0": "闪蒸水蒸气",
+  "total-output-row-8-1": "0.2096",
+  "total-output-row-8-2": "kg",
+  "total-output-row-8-3": "干燥输出"
+ },
+ "edges": {
+  "edge_F12": {
+   "source": "op_M2-OP3",
+   "target": "out_F12",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-01": {
+   "source": "op_M2-OP1",
+   "target": "op_M2-OP2",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-02": {
+   "source": "op_M2-OP2",
+   "target": "op_M2-OP3",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-03": {
+   "source": "op_M2-OP3",
+   "target": "op_M2-OP4",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F06": {
+   "source": "ext_F06",
+   "target": "op_M2-OP3",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9270BE;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F10": {
+   "source": "op_M2-OP3",
+   "target": "out_F10",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;entryX=0.5;entryY=0;entryPerimeter=1;shape=flexArrow;curved=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;",
+   "points": []
+  },
+  "edge_F01": {
+   "source": "ext_F01",
+   "target": "op_M1-OP1",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;entryPerimeter=1;shape=flexArrow;curved=0;exitDx=0;exitDy=0;",
+   "points": []
+  },
+  "edge_F03": {
+   "source": "op_M1-OP1",
+   "target": "out_F03",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;curved=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-04": {
+   "source": "op_M3-OP1",
+   "target": "op_M3-OP2",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-08": {
+   "source": "op_M3-OP2",
+   "target": "op_M3-OP5",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-10": {
+   "source": "op_M3-OP5",
+   "target": "op_M3-OP6",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-09": {
+   "source": "op_M3-OP6",
+   "target": "op_M3-OP7",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F20": {
+   "source": "op_M3-OP7",
+   "target": "out_F20",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-05": {
+   "source": "op_M3-OP2",
+   "target": "op_M3-OP3",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.4864864864864865;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-06": {
+   "source": "op_M3-OP3",
+   "target": "op_M3-OP4",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-07": {
+   "source": "op_M3-OP4",
+   "target": "op_M3-OP8",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F19": {
+   "source": "op_M3-OP8",
+   "target": "out_F19",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F15": {
+   "source": "ext_F15",
+   "target": "op_M3-OP1",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9270BE;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": [
+    [
+     1579.0,
+     500.0
+    ]
+   ]
+  },
+  "top_TOP-11": {
+   "source": "water-wash-flakes",
+   "target": "op_M3-OP5",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F16": {
+   "source": "ext_F16",
+   "target": "op_M3-OP3",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9270BE;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-13": {
+   "source": "op_M3-OP4",
+   "target": "wash-water-out",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F21": {
+   "source": "op_M3-OP3",
+   "target": "out_F21",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F23": {
+   "source": "op_M3-OP7",
+   "target": "out_F23",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;shape=flexArrow;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;",
+   "points": []
+  },
+  "edge_F22": {
+   "source": "op_M3-OP8",
+   "target": "out_F22",
+   "style": "edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;",
+   "points": []
+  },
+  "top_TOP-12": {
+   "source": "op_M3-OP6",
+   "target": "press-water",
+   "style": "edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashPattern=6 4;strokeColor=#9270BE;strokeWidth=1.8;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;curved=1;",
+   "points": []
+  },
+  "edge_F02": {
+   "source": "op_M1-OP1",
+   "target": "op_M2-OP1",
+   "style": "edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;curved=1;shape=flexArrow;",
+   "points": []
+  },
+  "edge_F09": {
+   "source": "op_M2-OP4",
+   "target": "op_M3-OP1",
+   "style": "edgeStyle=none;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitPerimeter=1;shape=flexArrow;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;",
+   "points": []
+  }
+ }
+}

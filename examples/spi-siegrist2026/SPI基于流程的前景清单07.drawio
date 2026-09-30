@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="Electron" agent="Codex">
+  <diagram id="spi-modular-06" name="SPI流程化前景清单06">
+    <mxGraphModel dx="1102" dy="1314" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3040" pageHeight="1715" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M2" parent="1" style="rounded=1;arcSize=2;container=1;pointerEvents=0;fillColor=#F6FAFC;strokeColor=#A8C7DA;strokeWidth=1.5;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="" vertex="1">
+          <mxGeometry height="870" width="835" x="570" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="PR-DEFAT-header" parent="M2" style="fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="Ⅱ  大豆脱脂" vertex="1">
+          <mxGeometry height="62" width="833.1022727272727" x="0.9488636363636364" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PR-DEFAT-en" parent="M2" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="Conditioning · flaking · extraction · desolventizing" vertex="1">
+          <mxGeometry height="36" width="816.0227272727273" x="9.488636363636363" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="op_condition" parent="M2" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;调质&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;调节豆粒状态&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="151.8181818181818" x="37.95454545454545" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="op_flake" parent="M2" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;压片&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;压薄以利萃取&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="151.8181818181818" x="227.72727272727272" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="MoMRl9LwaC7WgRhjJg1Y-4" edge="1" parent="M2" source="op_extract" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=0;shape=flexArrow;" target="hexane-loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="op_extract" parent="M2" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;正己烷萃取&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;用正己烷溶出豆油&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="151.8181818181818" x="417.5" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="op_desolv" parent="M2" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;脱溶&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;去除残留溶剂&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="151.8181818181818" x="630.9943181818181" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="top_condition_flake" edge="1" parent="M2" source="op_condition" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_flake" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_flake_extract" edge="1" parent="M2" source="op_flake" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_extract" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_extract_desolv" edge="1" parent="M2" source="op_extract" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_desolv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hexane" flow_ids="F_DEFAT_HEXANE" parent="M2" style="rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="新鲜正己烷&lt;br&gt;&lt;b&gt;0.002728 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="84" width="189.77272727272728" x="398.52272727272725" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_DEFAT_HEXANE" edge="1" flow_id="F_DEFAT_HEXANE" parent="M2" source="hexane" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9270BE;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_extract" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oil" flow_ids="F_DEFAT_OIL" parent="M2" style="rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="豆油&lt;br&gt;&lt;b&gt;0.4764 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="180.2840909090909" x="284.6570454545454" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_DEFAT_OIL" edge="1" flow_id="F_DEFAT_OIL" parent="M2" source="op_extract" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;entryX=0.5;entryY=0;entryPerimeter=1;shape=flexArrow;curved=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="oil" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="water-II" flow_ids="F_DEFAT_WATER" parent="M2" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="工艺水&amp;nbsp;&lt;br&gt;&lt;b&gt;0.6251 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="84" width="237.2159090909091" x="272.78590909090906" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="waste-II" flow_ids="F_DEFAT_WASTEWATER" parent="M2" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="工艺废水&lt;br&gt;&lt;b&gt;0.000625 m³&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;≈ 0.625 L&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="218.23863636363637" x="23.72159090909091" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="hexane-loss" flow_ids="F_DEFAT_HEXANE_EMISSIONS" parent="M2" style="rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="正己烷排放&amp;nbsp;&lt;br&gt;&lt;b&gt;0.002728 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="218.23863636363637" x="510.0018181818182" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="energy-II-e" flow_ids="F_DEFAT_ELECTRICITY" parent="M2" style="rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="电力输入&lt;br&gt;&lt;b&gt;0.0788 kWh&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="218.23863636363637" x="23.72159090909091" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="energy-II-h" flow_ids="F_DEFAT_HEAT" parent="M2" style="rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="热量输入&lt;br&gt;&lt;b&gt;1.8897 MJ&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="218.23863636363637" x="265.6818181818182" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=40;fontStyle=1;align=left;verticalAlign=middle;spacing=8;" value="大豆分离蛋白（SPI）基于流程的前景清单" vertex="1">
+          <mxGeometry height="60" width="816.02" x="1112" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="功能单位：1 kg SPI 产品　　Siegrist et al., 2026　　加工前景 · 作者参数化模型代表情景" vertex="1">
+          <mxGeometry height="40" width="2960" x="40" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="M1" parent="1" style="rounded=1;arcSize=2;container=1;pointerEvents=0;fillColor=#F6FAFC;strokeColor=#A8C7DA;strokeWidth=1.5;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="" vertex="1">
+          <mxGeometry height="870" width="506" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="PR-DEHULL-header" parent="M1" style="fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="Ⅰ  清理、破碎与脱壳" vertex="1">
+          <mxGeometry height="62" width="505" x="1" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PR-DEHULL-en" parent="M1" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="Cleaning &amp; dehulling" vertex="1">
+          <mxGeometry height="36" width="445" x="10" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="raw" flow_ids="F_SOY_CROP" parent="M1" style="rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="原始大豆&lt;br&gt;&lt;b&gt;2.7229 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="150" x="15" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="op_dehull" parent="M1" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;清理、破碎&lt;br&gt;与脱壳&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;除杂、去除豆壳&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="190" x="170" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SOY_CROP" edge="1" flow_id="F_SOY_CROP" parent="M1" source="raw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.5;entryPerimeter=1;shape=flexArrow;curved=0;exitDx=0;exitDy=0;" target="op_dehull" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hulls" flow_ids="F_DEHULL_HULLS" parent="M1" style="rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="豆壳&lt;br&gt;&lt;b&gt;0.2017 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="85" width="190" x="170" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_DEHULL_HULLS" edge="1" flow_id="F_DEHULL_HULLS" parent="M1" source="op_dehull" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;curved=1;shape=flexArrow;" target="hulls" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="energy-I" flow_ids="F_DEHULL_ELECTRICITY" parent="M1" style="rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="电力输入&lt;br&gt;&lt;b&gt;0.0164 kWh&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="250" x="40" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-edge_F_DEHULLED_SOY" parent="M1" style="text;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;fillColor=#ffff88;strokeColor=#36393d;" value="去壳大豆&lt;br&gt;2.5212 kg" vertex="1">
+          <mxGeometry height="55" width="125" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="M3" parent="1" style="rounded=1;arcSize=2;container=1;pointerEvents=0;fillColor=#F6FAFC;strokeColor=light-dark(#4490ca, #9477ba);strokeWidth=1.5;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="" vertex="1">
+          <mxGeometry height="870" width="1575" x="1429" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="PR-ISOLATE-header" parent="M3" style="fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=center;verticalAlign=middle;spacing=8;" value="Ⅲ  SPI 蛋白提取" vertex="1">
+          <mxGeometry height="62" width="1573" x="1" y="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PR-ISOLATE-en" parent="M3" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="Isoelectric precipitation" vertex="1">
+          <mxGeometry height="36" width="1555" x="10" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="op_soak" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;浸泡 / 碱溶&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;碱溶大豆蛋白&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;热 3.0438 MJ&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="180" x="60" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="op_c1" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;离心 1&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;分出蛋白提取液&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;电 0.0201 kWh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="180" x="330" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="op_c2" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;离心 2&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;洗涤湿豆片并回水&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;电 0.001257 kWh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="185" x="580" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="op_press" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;压榨&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;压出湿豆片中的水&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;电 0.000777 kWh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="170" x="830" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="op_flash" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;闪蒸干燥&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;干燥脱蛋白豆片&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;热 0.7545 MJ&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="170" x="1065" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="op_c3" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;离心 3&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;酸沉蛋白并分出乳清&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;电 0.0189 kWh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="185" x="330" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="op_c4" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;离心 4&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;洗涤蛋白沉淀&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;电 0.0138 kWh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="170" x="830" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="op_spray" parent="M3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;喷雾干燥&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#4D6755&quot;&gt;干燥蛋白浆液&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px;color:#A75E49&quot;&gt;热 23.7025 MJ&lt;/span&gt;" vertex="1">
+          <mxGeometry height="96" width="170" x="1065" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="top_soak_c1" edge="1" parent="M3" source="op_soak" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_c1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_c1_c2" edge="1" parent="M3" source="op_c1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_c2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_c2_press" edge="1" parent="M3" source="op_c2" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_press" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_press_flash" edge="1" parent="M3" source="op_press" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_flash" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="spent" flow_ids="F_SPI_SPENT_FLAKES" parent="M3" style="rounded=1;arcSize=8;fillColor=#FFF4D8;strokeColor=#BC9036;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="提取后豆片&lt;br&gt;&lt;b&gt;0.5449 kg&lt;/b&gt;&lt;br&gt;含水约 10%" vertex="1">
+          <mxGeometry height="86" width="230" x="1310" y="287" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_SPENT_FLAKES" edge="1" flow_id="F_SPI_SPENT_FLAKES" parent="M3" source="op_flash" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9E7636;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="spent" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_c1_c3" edge="1" parent="M3" source="op_c1" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.4864864864864865;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_c3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_c3_c4" edge="1" parent="M3" source="op_c3" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_c4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="top_c4_spray" edge="1" parent="M3" source="op_c4" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_spray" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="spi-product" flow_ids="F_SPI_PRODUCT" parent="M3" style="rounded=1;arcSize=8;fillColor=#DBEEDD;strokeColor=#3F7951;strokeWidth=2.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="大豆分离蛋白 SPI&lt;br&gt;&lt;b&gt;1.0000 kg&lt;/b&gt;&lt;br&gt;干物质 95%" vertex="1">
+          <mxGeometry height="90" width="230" x="1310" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_PRODUCT" edge="1" flow_id="F_SPI_PRODUCT" parent="M3" source="op_spray" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="spi-product" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="naoh" flow_ids="F_SPI_NAOH_INPUT" parent="M3" style="rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="NaOH 10% 溶液&lt;br&gt;&lt;b&gt;0.1241 L&lt;/b&gt;*&lt;br&gt;&lt;span style=&quot;font-size:17px&quot;&gt;稀释后使用&lt;/span&gt;" vertex="1">
+          <mxGeometry height="98" width="240" x="30" y="75.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_NAOH_INPUT" edge="1" flow_id="F_SPI_NAOH_INPUT" parent="M3" source="naoh" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9270BE;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_soak" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="water-wash-flakes" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="豆片洗涤水" vertex="1">
+          <mxGeometry height="62" width="185" x="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="top_water_c2" edge="1" parent="M3" source="water-wash-flakes" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_c2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hcl" flow_ids="F_SPI_HCL_INPUT" parent="M3" style="rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="HCl 10% 溶液&lt;br&gt;&lt;b&gt;0.1737 L&lt;/b&gt;*&lt;br&gt;&lt;span style=&quot;font-size:17px&quot;&gt;稀释后使用&lt;/span&gt;" vertex="1">
+          <mxGeometry height="105" width="230" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_HCL_INPUT" edge="1" flow_id="F_SPI_HCL_INPUT" parent="M3" source="hcl" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#9270BE;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="op_c3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="press-water" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="压榨工艺水" vertex="1">
+          <mxGeometry height="45" width="170" x="830" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="wash-water-out" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="洗涤工艺水" vertex="1">
+          <mxGeometry height="50" width="170" x="830" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="top_c4_water" edge="1" parent="M3" source="op_c4" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="wash-water-out" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="whey" flow_ids="F_SPI_WHEY_PHYSICAL" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="乳清水相&lt;br&gt;&lt;b&gt;11.4902 kg&lt;/b&gt;*" vertex="1">
+          <mxGeometry height="64" width="230" x="307.5" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_WHEY_PHYSICAL" edge="1" flow_id="F_SPI_WHEY_PHYSICAL" parent="M3" source="op_c3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="whey" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flash-vapor" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="水蒸气&lt;br&gt;&lt;b&gt;0.2096 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="170" x="1140" y="128.5" as="geometry" />
+        </mxCell>
+        <mxCell id="top_flash_vapor" edge="1" parent="M3" source="op_flash" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;shape=flexArrow;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="flash-vapor" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="spray-vapor" flow_ids="F_SPI_VAPOR" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="蒸发水&lt;br&gt;&lt;b&gt;4.9375 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="64" width="200" x="1050" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_VAPOR" edge="1" flow_id="F_SPI_VAPOR" parent="M3" source="op_spray" style="edgeStyle=none;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#4F94C6;strokeWidth=1.8;dashPattern=6 4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;shape=flexArrow;" target="spray-vapor" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="water-III" flow_ids="F_SPI_TAP_WATER" parent="M3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="外部取水&lt;br&gt;&lt;b&gt;16.98 kg&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="247.5" x="30" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="energy-III-e" flow_ids="F_SPI_ELECTRICITY" parent="M3" style="rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="电力输入&amp;nbsp;&lt;br&gt;&lt;b&gt;0.0630 kWh&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:15px&quot;&gt;含泵送 0.0082（×1.15）&lt;/span&gt;" vertex="1">
+          <mxGeometry height="84" width="247.5" x="307.5" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="energy-III-h" flow_ids="F_SPI_HEAT" parent="M3" style="rounded=1;arcSize=8;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;" value="热量输入&amp;nbsp;&lt;br&gt;&lt;b&gt;27.5008 MJ&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="295" x="690" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="MoMRl9LwaC7WgRhjJg1Y-7" edge="1" parent="M3" source="op_press" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashPattern=6 4;strokeColor=#9270BE;strokeWidth=1.8;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;curved=1;" target="press-water">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_DEHULLED_SOY" edge="1" flow_id="F_DEHULLED_SOY" parent="1" source="op_dehull" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=1;entryPerimeter=1;curved=1;shape=flexArrow;" target="op_condition" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_F_SPI_WHITE_FLAKES" edge="1" flow_id="F_SPI_WHITE_FLAKES" parent="1" source="op_desolv" style="edgeStyle=none;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#243747;strokeWidth=2.4;fontFamily=Microsoft YaHei;fontSize=19;fontColor=#243747;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitPerimeter=1;shape=flexArrow;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="op_soak" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1460" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-label-edge_F_SPI_WHITE_FLAKES" parent="1" style="text;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontSize=19;fontStyle=0;align=center;verticalAlign=middle;spacing=8;fillColor=#ffff88;strokeColor=#36393d;" value="白豆片&lt;br&gt;1.9852 kg&lt;br&gt;干物质 88%" vertex="1">
+          <mxGeometry height="105" width="105" x="1370" y="467" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-title" parent="1" style="fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=left;verticalAlign=middle;spacing=8;" value="总输入清单（每 1 kg SPI）" vertex="1">
+          <mxGeometry height="55" width="955" x="35" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-header-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="物料" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-header-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="数量" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-header-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="单位" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-header-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="归属 / 用途" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-0-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="原始大豆" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-0-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="2.7229" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-0-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="kg" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-0-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="Ⅰ 原料" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-1-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="工艺水（脱脂）" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-1-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.6251" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-1-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="kg" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-1-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="Ⅱ 模块投入" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-2-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="外部取水（tap water）" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1375" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-2-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="16.9800" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1375" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-2-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="kg" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1375" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-2-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="Ⅲ 外部取水" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1375" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-3-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="新鲜正己烷" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-3-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.002728" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-3-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="kg" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-3-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="Ⅱ 萃取补充" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-4-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="NaOH 10% 溶液" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1485" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-4-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="0.1241" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1485" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-4-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="L" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1485" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-4-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="Ⅲ 碱溶配液*" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1485" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-5-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="HCl 10% 溶液" vertex="1">
+          <mxGeometry height="55" width="380" x="35" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-5-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.1737" vertex="1">
+          <mxGeometry height="55" width="195" x="415" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-5-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="L" vertex="1">
+          <mxGeometry height="55" width="100" x="610" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="total-input-row-5-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="Ⅲ 酸化配液*" vertex="1">
+          <mxGeometry height="55" width="280" x="710" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-title" parent="1" style="fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=left;verticalAlign=middle;spacing=8;" value="总输出清单（每 1 kg SPI）" vertex="1">
+          <mxGeometry height="55" width="1020" x="1015" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-header-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="物料 / 排放" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-header-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="数量" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-header-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="单位" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-header-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="性质" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-0-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="大豆分离蛋白（SPI）" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1253" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-0-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="1.0000" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1253" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-0-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1253" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-0-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="目标产品" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1253" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-1-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="豆壳" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1296" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-1-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.2017" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1296" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-1-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1296" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-1-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="副产品" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1296" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-2-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="豆油" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-2-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="0.4764" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-2-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-2-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="副产品" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-3-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="提取后豆片" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1382" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-3-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.5449" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1382" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-3-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1382" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-3-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="副产品" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1382" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-4-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="乳清液" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1425" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-4-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="11.4902" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1425" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-4-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1425" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-4-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="工艺液相" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1425" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-5-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="脱脂废水" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-5-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.6251" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-5-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-5-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="工艺废水" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-6-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="正己烷排放" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1511" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-6-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="0.002728" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1511" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-6-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1511" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-6-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="大气排放" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1511" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-7-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="蒸发水（喷雾干燥）" vertex="1">
+          <mxGeometry height="43" width="410" x="1015" y="1554" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-7-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="4.9375" vertex="1">
+          <mxGeometry height="43" width="210" x="1425" y="1554" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-7-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="kg" vertex="1">
+          <mxGeometry height="43" width="105" x="1635" y="1554" as="geometry" />
+        </mxCell>
+        <mxCell id="total-output-row-7-3" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="干燥输出" vertex="1">
+          <mxGeometry height="43" width="295" x="1740" y="1554" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-title" parent="1" style="fillColor=#DCEEF7;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=27;fontStyle=1;align=left;verticalAlign=middle;spacing=8;" value="总能源投入（每 1 kg SPI）" vertex="1">
+          <mxGeometry height="55" width="945" x="2060" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-header-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="模块" vertex="1">
+          <mxGeometry height="82" width="480" x="2060" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-header-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="电力（kWh）" vertex="1">
+          <mxGeometry height="82" width="225" x="2540" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-header-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#EAF2F7;fontStyle=1;" value="热量（MJ）" vertex="1">
+          <mxGeometry height="82" width="240" x="2765" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-0-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="Ⅰ 清理、破碎与脱壳" vertex="1">
+          <mxGeometry height="82" width="480" x="2060" y="1292" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-0-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="0.0164" vertex="1">
+          <mxGeometry height="82" width="225" x="2540" y="1292" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-0-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="—" vertex="1">
+          <mxGeometry height="82" width="240" x="2765" y="1292" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-1-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="Ⅱ 大豆脱脂" vertex="1">
+          <mxGeometry height="82" width="480" x="2060" y="1374" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-1-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="0.0788" vertex="1">
+          <mxGeometry height="82" width="225" x="2540" y="1374" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-1-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;fillColor=#F5F8FA;" value="1.8897" vertex="1">
+          <mxGeometry height="82" width="240" x="2765" y="1374" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-2-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="Ⅲ SPI 蛋白提取" vertex="1">
+          <mxGeometry height="82" width="480" x="2060" y="1456" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-2-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="0.0630" vertex="1">
+          <mxGeometry height="82" width="225" x="2540" y="1456" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-2-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" value="27.5008" vertex="1">
+          <mxGeometry height="82" width="240" x="2765" y="1456" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-3-0" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=28;fontStyle=1;align=left;verticalAlign=middle;spacing=8;fillColor=#FBE8E2;" value="合计" vertex="1">
+          <mxGeometry height="58" width="480" x="2060" y="1538" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-3-1" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=28;fontStyle=1;align=right;verticalAlign=middle;spacing=8;fillColor=#FBE8E2;" value="0.1582" vertex="1">
+          <mxGeometry height="58" width="225" x="2540" y="1538" as="geometry" />
+        </mxCell>
+        <mxCell id="total-energy-row-3-2" parent="1" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=28;fontStyle=1;align=right;verticalAlign=middle;spacing=8;fillColor=#FBE8E2;" value="29.3906" vertex="1">
+          <mxGeometry height="58" width="240" x="2765" y="1538" as="geometry" />
+        </mxCell>
+        <mxCell id="figure-note" parent="1" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=19;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="模块Ⅱ水、电、热仅有模块总量；模块Ⅲ能耗按作者公式拆至操作，泵送电耗 0.0082 kWh（×1.15）注于模块Ⅲ电力框内。模块Ⅲ外部取水 16.98 kg（作者 tap_water 公式值）、废水排放 11.490 kg（0.01149 m³）；工艺投水 25.852 kg 含厂内循环，不进 LCI（口径详见冻结清单 Q04）。NaOH/HCl 按 10% 溶液体积计（* 为审计中值，口径详见冻结清单问题表）。脱脂废水原文以 m³ 列示（0.000625 m³＝0.6251 kg），图中统一 kg。图中水量除注明外均为 kg（质量口径）。蒸发水原文以 m³ 列示（0.004938 m³＝4.9375 kg），图中统一 kg。" vertex="1">
+          <mxGeometry height="31" width="2960" x="40" y="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="source-note" parent="1" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=18;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" value="来源：Siegrist et al. (2026), Sustainable Production and Consumption 62, 127–138；官方补充数据 mmc2（SPI、Defatting、Formulas_SPI 工作表），内容与作者 GitHub runtime 数据一致。干物质条件：白豆片 88%（SPI!H29）、SPI 95%（dm_output）、豆渣含水约 10%（作者公式假设）；图中水量统一为 kg 质量口径，m³ 仅为换算参考。" vertex="1">
+          <mxGeometry height="27" width="2960" x="40" y="1682" as="geometry" />
+        </mxCell>
+        <mxCell id="MoMRl9LwaC7WgRhjJg1Y-3" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="92" width="909.55" x="70" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-band" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="fillColor=#FFFFFF;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="92" width="756.2550561797752" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=25;fontStyle=1;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="图例" vertex="1">
+          <mxGeometry height="36" width="70.44498353066855" x="16.194249087510013" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box-0" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="rounded=1;arcSize=9;fillColor=#E5F2E6;strokeColor=#4D885C;strokeWidth=1.8;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="44.53418499065254" x="97.16549452506008" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-label-0" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="单元操作" vertex="1">
+          <mxGeometry height="48" width="210.52523813763017" x="150.60651651384313" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box-2" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="rounded=1;arcSize=8;fillColor=#E7F4FD;strokeColor=#4F94C6;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="44.53418499065254" x="263.1565476720377" y="27" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-label-2" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="水与液相" vertex="1">
+          <mxGeometry height="48" width="210.52523813763017" x="327.9335440220778" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box-3" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="rounded=1;arcSize=8;fillColor=#F1EAFB;strokeColor=#9270BE;strokeWidth=1.6;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="44.53418499065254" x="433.19616309089287" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-label-3" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="化学品" vertex="1">
+          <mxGeometry height="48" width="210.52523813763017" x="497.97315944093293" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box-4" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="rounded=1;arcSize=0;fillColor=#FBE8E2;strokeColor=#C9836E;strokeWidth=1.4;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="44.53418499065254" x="589.997280334728" y="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-label-4" parent="MoMRl9LwaC7WgRhjJg1Y-3" style="text;fillColor=none;strokeColor=none;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=21;fontStyle=0;align=left;verticalAlign=middle;spacing=8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="能源投入" vertex="1">
+          <mxGeometry height="48" width="102.19662921348313" x="649.9981820224718" y="20" as="geometry" />
+        </mxCell>
+      <mxCell id="total-output-row-8-0" value="闪蒸水蒸气" style="fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1"><mxGeometry x="1015" y="1597" width="410" height="43" as="geometry" /></mxCell><mxCell id="total-output-row-8-1" value="0.2096" style="fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" vertex="1" parent="1"><mxGeometry x="1425" y="1597" width="210" height="43" as="geometry" /></mxCell><mxCell id="total-output-row-8-2" value="kg" style="fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=right;verticalAlign=middle;spacing=8;" vertex="1" parent="1"><mxGeometry x="1635" y="1597" width="105" height="43" as="geometry" /></mxCell><mxCell id="total-output-row-8-3" value="干燥输出" style="fillColor=#F5F8FA;strokeColor=#BCD0DD;strokeWidth=1;html=1;whiteSpace=wrap;fontFamily=Microsoft YaHei;fontColor=#243747;fontSize=22;fontStyle=0;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1"><mxGeometry x="1740" y="1597" width="295" height="43" as="geometry" /></mxCell></root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
